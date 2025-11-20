@@ -1,6 +1,7 @@
 import React from "react";
 import result from '../../assets/results.jpg'
 import "./Body.css";
+import { Link } from "react-router-dom";
 
 
 export default function Body() {
@@ -12,7 +13,7 @@ export default function Body() {
         <div className="hero-text1">
           <h1>Track. Improve. Transform.</h1>
           <p>Your fitness journey starts here. Track workouts, set goals, and become the best version of yourself.</p>
-          <button className="hero-btn1">Start Now</button>
+          <Link to="/add-workout"><button className="hero-btn1">Start Now</button></Link>
         </div>
 
         <div className="hero-img1">

@@ -31,6 +31,36 @@
     margin-bottom: 0.6rem;
     letter-spacing: 0.5px;
   }
+
+  :where(.google-btn) {
+    margin-top: 1rem;
+    width: 100%;
+    background: #fff;
+    color: #444;
+    font-weight: 600;
+    padding: 12px 15px;
+    border-radius: 14px;
+    border: 1.8px solid #d1d1d1;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    transition: 0.25s ease;
+  }
+  
+  :where(.google-btn:hover) {
+    background: #f4f4f4;
+    transform: translateY(-2px);
+  }
+  
+  :where(.google-logo) {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  
   
   :where(.signup-subtext) {
     font-size: 1rem;
@@ -41,7 +71,7 @@
   :where(.signup-form) {
     display: flex;
     flex-direction: column;
-    gap: 1.3rem;
+    gap: 1rem;
     text-align: left;
   }
   
@@ -68,7 +98,7 @@
   }
   
   :where(.signup-btn) {
-    margin-top: 0.8rem;
+    margin-top: 0.3rem;
     padding: 13px;
     width: 100%;
     background: linear-gradient(135deg, #6c63ff, #574bff);
@@ -87,7 +117,7 @@
   }
   
   :where(.signup-login) {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 0.95rem;
     color: #444;
   }

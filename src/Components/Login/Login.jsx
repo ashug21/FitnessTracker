@@ -1,15 +1,42 @@
-import React,{useState} from "react";
+import React,{useEffect, useState} from "react";
 import "./Login.css";
 import Navbar from "../Navbar/Navbar";
+import {app , analytics} from '../../../Firebase'
+import {getAuth , signInWithEmailAndPassword , onAuthStateChanged} from 'firebase/auth';
+import {Link , useNavigate} from 'react-router-dom'
+
+const auth = getAuth(app);
 
 const Login = () => {
 
+const navigate = useNavigate();
+
 const [email , setEmail] = useState("");
 const [password , setPassword] = useState("");
+const [user , setUser] = useState(null);
 
-const handleLogin = async() => {
-
+const handleLogin = async(e) => {
+ 
+  e.preventDefault();
+  try {
+   await signInWithEmailAndPassword(auth , email , password);
+    navigate('/');
+  } catch (error) { 
+    alert(error);
+  }
 }
+
+
+useEffect(() => {
+  onAuthStateChanged(auth ,user => {
+      if(user){
+        setUser(user);
+      }
+      else{
+        setUser(null);
+      }
+  });
+},[]);
 
   return (
     <div>

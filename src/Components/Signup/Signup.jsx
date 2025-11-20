@@ -1,20 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Signup.css";
 import Navbar from "../Navbar/Navbar";
+import { app, analytics } from "../../../Firebase";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut
+} from "firebase/auth";
+import { Link, useNavigate } from "react-router-dom";
+import Google_icon from "../../assets/google.png";
 
+const auth = getAuth(app);
 
 const Signup = () => {
+  const navigate = useNavigate();
 
-
-  const [name, setName] = useState("");
+  // const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [reenterpassword, setReEnterPassword] = useState("");
+  const [user, setUser] = useState(null);
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await createUserWithEmailAndPassword(auth, email, password);
+      await signOut(auth);
+      navigate("/login");
+    } catch (error) {
+      alert(error);
+    }
+  };
 
-  const handleSubmit = async() => {
-
-  }
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser(null);
+      }
+    });
+  }, []);
 
   return (
     <div>
@@ -23,10 +49,12 @@ const Signup = () => {
       <div className="signup-wrapper">
         <div className="signup-box">
           <h2 className="signup-heading">Create Account</h2>
-          <p className="signup-subtext">Join now to start managing your tasks.</p>
+          <p className="signup-subtext">
+            Join now to start managing your tasks.
+          </p>
 
           <form className="signup-form" onSubmit={handleSubmit}>
-            <div className="form-group">
+            {/* <div className="form-group">
               <label>Full Name</label>
               <input
                 onChange={(e) => setName(e.target.value)}
@@ -35,7 +63,7 @@ const Signup = () => {
                 placeholder="Enter your name"
                 required
               />
-            </div>
+            </div> */}
 
             <div className="form-group">
               <label>Email</label>
@@ -58,25 +86,18 @@ const Signup = () => {
                 required
               />
             </div>
-
-            <div className="form-group">
-              <label>Confirm Password</label>
-              <input
-                onChange={(e) => setReEnterPassword(e.target.value)}
-                value={reenterpassword}
-                type="password"
-                placeholder="Re-enter password"
-                required
-              />
-            </div>
-
             <button type="submit" className="signup-btn">
               Sign Up
+            </button>
+
+            <button type="button" className="google-btn" >
+              <img src={Google_icon} alt="Google" className="google-logo" />
+              Continue with Google
             </button>
           </form>
 
           <p className="signup-login">
-            Already have an account? <a href="/login">Log in</a>
+            Already have an account? <Link to="/login">Log in</Link>
           </p>
         </div>
       </div>

@@ -1,45 +1,123 @@
-.footer3 {
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    margin-top: 60px;
-    background: #0f172a;
-    color: white;
-    border-radius: 20px 20px 0 0;
+.ft-footer {
+  width: 100%;
+  padding: 3.5rem 2rem;
+  background: #ffffff;
+  border-top: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.ft-footer-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.ft-footer-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6c63ff, #5147ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.7px;
+}
+
+.ft-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.4rem 2rem;
+  max-width: 900px;
+}
+
+.ft-footer-links a {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.96rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.ft-footer-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #6c63ff;
+  transition: width 0.25s ease;
+  border-radius: 20px;
+}
+
+.ft-footer-links a:hover {
+  color: #6c63ff;
+}
+
+.ft-footer-links a:hover::after {
+  width: 100%;
+}
+
+.ft-footer-copy {
+  color: #777;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .ft-footer {
+    padding: 2.5rem 1.2rem;
   }
-  
-  .footer-logo3 {
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: -1px;
-    margin-bottom: 20px;
-    font-family: "Inter", sans-serif;
+
+  .ft-footer-logo {
+    font-size: 1.6rem;
   }
-  
-  .footer-links3 {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    margin-bottom: 24px;
+
+  .ft-footer-links {
+    gap: 1rem 1.4rem;
   }
-  
-  .footer-links3 a {
-    color: #cbd5e1;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    transition: 0.25s ease;
-    font-family: "Inter", sans-serif;
-  }
-  
-  .footer-links3 a:hover {
-    color: #ffffff;
-    transform: translateY(-2px);
-  }
-  
-  .footer-copy3 {
-    font-size: 14px;
-    opacity: 0.85;
-    font-family: "Inter", sans-serif;
-  }
-  
+}
+.ft-footer {
+  width: 100%;
+  padding: 3.5rem 2rem;
+  background: #111;
+  border-top: 1px solid #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.ft-footer-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #8f85ff, #5b4dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ft-footer-links a {
+  color: #cfcfcf;
+}
+
+.ft-footer-links a:hover {
+  color: #9d94ff;
+}
+
+.ft-footer-links a::after {
+  background: #9d94ff;
+}
+
+.ft-footer-copy {
+  color: #aaa;
+}
+
