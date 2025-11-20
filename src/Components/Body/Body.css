@@ -1,0 +1,121 @@
+/* Wrapper */
+.body-wrapper1 {
+    width: 100%;
+    padding: 20px 40px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* ================= HERO SECTION ================= */
+  .hero1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .hero-text1 h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #111827;
+    line-height: 1.2;
+  }
+  
+  .hero-text1 p {
+    margin-top: 14px;
+    font-size: 20px;
+    color: #4b5563;
+    max-width: 500px;
+  }
+  
+  /* CTA Button */
+  .hero-btn1 {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    padding: 14px 26px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+  }
+  
+  .hero-btn1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(37, 99, 235, 0.3);
+  }
+  
+  /* Hero Image */
+  .hero-img1 img {
+    width: 420px;
+    height: 380px;
+    border-radius: 18px;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+  
+  
+  
+  /* ================= FEATURE SECTION ================= */
+  .features1 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .feature-card1 {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: 0.25s ease;
+  }
+  
+  .feature-card1:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+  }
+  
+  .feature-card1 img {
+    width: 100%;
+    height: 180px;
+    border-radius: 14px;
+    object-fit: cover;
+    margin-bottom: 14px;
+  }
+  
+  .feature-card1 h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #111827;
+  }
+  
+  .feature-card1 p {
+    font-size: 16px;
+    color: #4b5563;
+  }
+  
+  
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 860px) {
+    .hero1 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-img1 img {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .features1 {
+      flex-direction: column;
+    }
+  }
+  

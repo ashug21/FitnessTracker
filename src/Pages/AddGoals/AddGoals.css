@@ -1,0 +1,88 @@
+.addgoals-container6 {
+    width: 90%;
+    max-width: 650px;
+    margin: 70px auto;
+    padding: 40px 45px;
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.45);
+  }
+  
+  .addgoals-title6 {
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #f1f5f9;
+    letter-spacing: -0.3px;
+  }
+  
+  .addgoals-form6 {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  
+  .form-group6 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group6 label {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #cbd5e1;
+  }
+  
+  .form-group6 input {
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #374151;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    background: #1f2937;
+    outline: none;
+    transition: 0.2s ease;
+    color: #f1f5f9;
+  }
+  
+  .form-group6 input::placeholder {
+    color: #9ca3af;
+  }
+  
+  .form-group6 input:focus {
+    border-color: #3b82f6;
+    background: #1e293b;
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.28);
+  }
+  
+  .submit-btn6 {
+    margin-top: 10px;
+    padding: 16px 0;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background: #e5e7eb;
+    color: #111827;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+  }
+  
+  .submit-btn6:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 650px) {
+    .addgoals-container6 {
+      padding: 30px;
+    }
+  }
+  
