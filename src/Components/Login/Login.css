@@ -10,6 +10,35 @@
     isolation: isolate;
   }
   
+  :where(.google-btn) {
+    margin-top: 0.8rem;
+    width: 100%;
+    padding: 14px;
+    background: #ffffff;
+    border: 1.5px solid #d0d0d0;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.25s ease;
+  }
+  
+  :where(.google-btn:hover) {
+    border-color: #6c63ff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(108, 99, 255, 0.12);
+  }
+  
+  :where(.google-btn img) {
+    height: 20px;
+    width: 20px;
+  }
+
+  
   :where(.login-box) {
     background: #fff;
     padding: 3.5rem 4rem;

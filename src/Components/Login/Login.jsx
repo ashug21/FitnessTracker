@@ -2,10 +2,11 @@ import React,{useEffect, useState} from "react";
 import "./Login.css";
 import Navbar from "../Navbar/Navbar";
 import {app , analytics} from '../../../Firebase'
-import {getAuth , signInWithEmailAndPassword , onAuthStateChanged} from 'firebase/auth';
+import {getAuth , signInWithEmailAndPassword , onAuthStateChanged , GoogleAuthProvider ,signInWithPopup} from 'firebase/auth';
 import {Link , useNavigate} from 'react-router-dom'
 
 const auth = getAuth(app);
+const googleProvider = new GoogleAuthProvider();
 
 const Login = () => {
 
@@ -37,6 +38,12 @@ useEffect(() => {
       }
   });
 },[]);
+
+const signInWithGoogle = async() => {
+
+await signInWithPopup(auth , googleProvider);
+navigate('/');
+}
 
   return (
     <div>
@@ -74,6 +81,11 @@ useEffect(() => {
             <button className="login-btn" type="submit">
               Login
             </button>
+            <button type="button" className="google-btn" onClick={signInWithGoogle}>
+  <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="g" />
+  Continue with Google
+</button>
+
           </form>
 
           <p className="login-signup">

@@ -2,16 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./Signup.css";
 import Navbar from "../Navbar/Navbar";
 import { app, analytics } from "../../../Firebase";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  onAuthStateChanged,
-  signOut
-} from "firebase/auth";
+import {getAuth,createUserWithEmailAndPassword,onAuthStateChanged,signOut , GoogleAuthProvider , signInWithPopup} from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import Google_icon from "../../assets/google.png";
 
 const auth = getAuth(app);
+const googleProvider = new GoogleAuthProvider();
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -31,6 +27,11 @@ const Signup = () => {
       alert(error);
     }
   };
+
+  const signInWithGoogle = async() => {
+    await signInWithPopup(auth , googleProvider);
+    navigate("/");
+  }
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
@@ -90,7 +91,7 @@ const Signup = () => {
               Sign Up
             </button>
 
-            <button type="button" className="google-btn" >
+            <button onClick={signInWithGoogle} type="button" className="google-btn" >
               <img src={Google_icon} alt="Google" className="google-logo" />
               Continue with Google
             </button>
