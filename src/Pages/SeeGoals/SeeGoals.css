@@ -1,0 +1,202 @@
+/* ---------- OUTER PAGE BACKGROUND ---------- */
+.seeGoals-outerSpacing9 {
+    padding: 28px 0;
+    background: rgba(0,0,0,0.3);
+    min-height: 40vh;
+  }
+  
+  /* ---------- NO-GOAL (EMPTY STATE) ---------- */
+  .no-data-div {
+    background: rgba(0, 0, 0, 0.3);
+    width: 92%;
+    max-width: 780px;
+    margin: 60px auto;
+    padding: 70px 24px;
+    border-radius: 14px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px solid rgba(255,255,255,0.03);
+    box-shadow: 0 12px 36px rgba(2,6,23,0.55);
+    backdrop-filter: blur(6px);
+  
+    animation: noDataFade 0.45s ease both;
+  }
+  
+  .no-data {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    color: #e6eef8;
+    letter-spacing: 0.6px;
+    opacity: 0.95;
+    margin: 0;
+  }
+  
+  .no-data-sub {
+    font-size: 1rem;
+    color: #9fb0c6;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.45;
+    opacity: 0.9;
+  }
+  
+  .null {
+    height: 200px;
+    width: 100%;
+    background: rgba(0,0,0,0);
+  }
+  
+  /* no-data fade animation */
+  @keyframes noDataFade {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* ---------- MAIN GOALS CARD CONTAINER ---------- */
+  .seeGoals-bigContainer9 {
+    width: 95%;
+    max-width: 920px;
+    margin: 32px auto;
+    padding: 20px 22px;
+    background: linear-gradient(180deg,#0f172a,#0b1220);
+    border: 1px solid rgba(255,255,255,0.03);
+    border-radius: 16px;
+    box-shadow: 0 14px 40px rgba(2,6,23,0.6);
+    position: relative;
+  }
+  
+  /* ---------- DELETE BUTTON ---------- */
+  .container-delete9 {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.03);
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
+    backdrop-filter: blur(4px);
+  }
+  
+  .container-delete9 img {
+    width: 22px;
+    height: 22px;
+    opacity: 0.85;
+    transition: 0.25s ease;
+  }
+  
+  .container-delete9:hover {
+    transform: translateY(-2px);
+    background: rgba(255,255,255,0.02);
+    box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+  }
+  
+  .container-delete9:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  /* ---------- TITLE ---------- */
+  .goals-title9 {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: left;
+    color: #e6eef8;
+    margin: 6px 8px 20px 8px;
+  }
+  
+  /* ---------- GOAL CARDS ---------- */
+  .goal-card9 {
+    width: 100%;
+    background: linear-gradient(180deg,#0f1726,#101521);
+    border: 1px solid rgba(255,255,255,0.03);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+    transition: transform .16s ease, box-shadow .16s ease;
+  }
+  
+  .goal-card9:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(2,6,23,0.7);
+  }
+  
+  /* ---------- CARD HEADER ---------- */
+  .goal-header9 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .goal-header9 h2 {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #b8c7d8;
+    font-weight: 700;
+  }
+  
+  /* ---------- MAIN VALUE ---------- */
+  .goal-value9 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-top: 8px;
+  }
+  
+  /* ---------- NOTE UNDER VALUE ---------- */
+  .goal-note9 {
+    margin-top: 6px;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    color: #9fb0c6;
+    line-height: 1.25;
+  }
+  
+  /* ---------- RESPONSIVE ADJUSTMENTS ---------- */
+  @media (max-width: 780px) {
+    .seeGoals-bigContainer9 {
+      padding: 18px;
+      margin: 18px;
+    }
+  
+    .goals-title9 {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+  
+    .goal-card9 {
+      padding: 12px 12px;
+    }
+  
+    .goal-value9 {
+      font-size: 16px;
+    }
+  
+    .no-data-div {
+      padding: 50px 18px;
+      margin: 40px 14px;
+    }
+  
+    .no-data {
+      font-size: 1.6rem;
+    }
+  }
+  

@@ -33,7 +33,7 @@ const Main = () => {
             <p>Track workouts. Set goals. Transform your life.</p>
             <br /> <br />
             <Link to="/signup">
-              <button className="button-2">SignUp</button>
+              <button className="button-2">Add Goal</button>
             </Link>
           </div>
         </div>

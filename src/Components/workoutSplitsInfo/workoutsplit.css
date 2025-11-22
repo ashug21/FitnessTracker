@@ -1,0 +1,56 @@
+.workout-split-wrapper19 {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .workout-split-title19 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #7C4DFF, #00D2FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .workout-split-sub19 {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .workout-split-section19 {
+    margin-bottom: 40px;
+  }
+  
+  .workout-split-heading19 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #7C4DFF, #00D2FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+  }
+  
+  .workout-split-list19 {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .workout-split-week-grid19 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .workout-split-day19 {
+    padding: 12px;
+    background: rgba(124,77,255,0.05);
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  

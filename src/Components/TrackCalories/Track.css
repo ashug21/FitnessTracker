@@ -1,0 +1,177 @@
+
+   .track-wrapper14 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 70px 20px;
+    background: #f4f6f8;
+  }
+  
+
+  
+  .track-card14 {
+    width: 100%;
+    max-width: 650px;
+    background: #ffffff;
+    padding: 50px 45px;
+    border-radius: 26px;
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .track-title14 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1f1f1f;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .track-sub14 {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  /* ===========================
+     FORM INPUTS
+     =========================== */
+  
+  .track-form14 {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  
+  .track-group14 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .track-label14 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .track-input14,
+  .track-select14 {
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: #f9fafb;
+    border: 1.5px solid #e5e7eb;
+    font-size: 15px;
+    transition: 0.25s ease;
+  }
+  
+  .track-input14:focus,
+  .track-select14:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: #ffffff;
+  }
+  
+  /* ===========================
+     BUTTONS
+     =========================== */
+  
+  .track-btns14 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .track-btn-calc14 {
+    padding: 14px 30px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+  }
+  
+  .track-btn-calc14:hover {
+    background: #1d4ed8;
+  }
+  
+  .track-btn-clear14 {
+    padding: 14px 30px;
+    background: #ef4444;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+  }
+  
+  .track-btn-clear14:hover {
+    background: #dc2626;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 560px) {
+    .track-card14 {
+      padding: 40px 30px;
+    }
+  
+    .track-btns14 {
+      flex-direction: column;
+      gap: 14px;
+    }
+  }
+
+  .result-container14 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* place results vertically */
+    align-items: center;
+    gap: 20px;
+    margin-top: 35px;
+  }
+  
+  .result-card14 {
+    width: 100%;
+    max-width: 650px;
+    background: #ffffff;
+    padding: 30px 32px;
+    border-radius: 22px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    animation: fadeIn14 0.35s ease-in-out;
+  }
+  
+  .result-calories14 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #2563eb;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+  }
+  
+  .result-description14 {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  /* Fade animation */
+  @keyframes fadeIn14 {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import {app , analytics} from '../../../Firebase'
 import {getAuth , signInWithEmailAndPassword , onAuthStateChanged , GoogleAuthProvider ,signInWithPopup} from 'firebase/auth';
 import {Link , useNavigate} from 'react-router-dom'
+import Google_icon from "../../assets/google.png";
 
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
@@ -81,15 +82,16 @@ navigate('/');
             <button className="login-btn" type="submit">
               Login
             </button>
-            <button type="button" className="google-btn" onClick={signInWithGoogle}>
-  <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="g" />
-  Continue with Google
-</button>
+           
+          <button onClick={signInWithGoogle} type="button" className="google-btn" >
+          <img src={Google_icon} alt="Google" className="google-logo" />
+          Continue with Google
+          </button>
 
           </form>
 
           <p className="login-signup">
-            Don't have an account? <a href="/signup">Sign Up</a>
+            Don't have an account? <Link to="/signup">Sign Up</Link>
           </p>
         </div>
       </div>

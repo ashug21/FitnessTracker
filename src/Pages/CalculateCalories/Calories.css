@@ -1,0 +1,104 @@
+.calories-wrapper13 {
+    display: flex;
+    justify-content: center;
+    padding: 70px 20px;
+    background: #f4f6f8;
+  }
+  
+  .calories-card13 {
+    max-width: 1100px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  
+  .calories-card13:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.12);
+  }
+  
+  .calories-img-container13 {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #eef1f6 0%, #f8f9fc 100%);
+    padding: 30px;
+  }
+  
+  .calories-img13 {
+    width: 100%;
+    height: calc(100% + 30px);
+    object-fit: cover;
+    border-radius: 20px;
+    filter: drop-shadow(0 6px 14px rgba(0,0,0,0.15));
+  }
+  
+  .calories-content13 {
+    width: 52%;
+    padding: 45px 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .calories-title13 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+  }
+  
+  .calories-text13 {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 18px;
+  }
+  
+  .calories-btn13 {
+    margin-top: 30px;
+    padding: 14px 38px;
+    background: linear-gradient(90deg, #7C4DFF, #00D2FF);
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+  }
+  
+  .calories-btn13:hover {
+    background: rgba(108, 102, 237, 0.2);
+    color : rgba(18, 18, 19, 0.5);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(29, 78, 216, 0.35);
+  }
+  
+  
+  @media (max-width: 940px) {
+    .calories-card13 {
+      flex-direction: column;
+    }
+  
+    .calories-img-container13 {
+      width: 100%;
+      padding: 40px 20px;
+    }
+  
+    .calories-content13 {
+      width: 100%;
+      padding: 32px 25px;
+    }
+  }
+  
+
+  
