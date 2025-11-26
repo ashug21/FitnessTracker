@@ -3,9 +3,10 @@ import "./AddWorkout.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import axios from "axios";
+import goal_img from "../../assets/goal.png";
+import heavy from '../../assets/moti.png'
 
 export default function AddWorkout() {
-
   const [date, setDate] = useState("");
   const [exercise, setExercise] = useState("");
   const [sets, setSets] = useState("");
@@ -16,13 +17,14 @@ export default function AddWorkout() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:8080/aw/addWorkout", {
+      const response = await axios.post("http://localhost:8080/aw/addWorkout", {
         date,
         exercise,
         sets,
         reps,
         weight,
       });
+
       if (!response.data.success) {
         alert(response.data.message || "Something went wrong");
         return;
@@ -33,7 +35,6 @@ export default function AddWorkout() {
       setSets("");
       setReps("");
       setWeight("");
-
     } catch (error) {
       console.error(error);
     }
@@ -42,13 +43,25 @@ export default function AddWorkout() {
   return (
     <div>
       <Navbar />
-      <br /> <br />
 
       <div className="addworkout-container5">
         <h1 className="addworkout-title5">Add Workout Details</h1>
 
-        <form className="addworkout-form5" onSubmit={onSubmit}>
+        {/* Added Coconut Quote Banner */}
+        <div className="addgoals-hero">
+          <div className="addgoals-quote">
+            <p className="quote-text">
+            Everybody wants to be a bodybuilder, but <br/> nobody wants to lift no heavy-ass weight.
+            </p>
+            <p className="quote-author">— Ronnie Coleman</p>
+          </div>
 
+          <div className="addgoals-illustration">
+            <img src={heavy} alt="goal illustration" className="goal-image" />
+          </div>
+        </div>
+
+        <form className="addworkout-form5" onSubmit={onSubmit}>
           <div className="form-group5">
             <label>Date</label>
             <input

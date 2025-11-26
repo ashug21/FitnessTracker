@@ -17,6 +17,8 @@ import FullBody from './Components/workoutSplitsInfo/FullBody'
 import Phul from './Components/workoutSplitsInfo/Phul'
 import Phat from './Components/workoutSplitsInfo/Phat'
 import Arnold from './Components/workoutSplitsInfo/Arnold'
+import CheckGoals from './Pages/CheckGoals/CheckGoals'
+import AboutSupplements from './Pages/AboutSupplements/AboutSupplements'
 
 
 const App = () => {
@@ -40,6 +42,8 @@ const App = () => {
         <Route path='/as' element={<Arnold/>} />
         <Route path='/phul' element={<Phul/>} />
         <Route path='/phat' element={<Phat/>} />
+        <Route path='/checkgoals' element={<CheckGoals/>} />
+        <Route path='/aboutSupplements' element={<AboutSupplements/>} />
       </Routes>
     </div>
   )

@@ -1,88 +1,158 @@
 .addgoals-container6 {
-    width: 90%;
-    max-width: 650px;
-    margin: 70px auto;
-    padding: 40px 45px;
-    background: #111827;
-    border: 1px solid #1f2937;
-    border-radius: 20px;
-    box-shadow: 0 12px 32px rgba(0,0,0,0.45);
+  width: 90%;
+  max-width: 650px;
+  margin: 70px auto;
+  padding: 40px 45px;
+  background: #ffffff; /* Coconut white */
+  border: 1px solid #efe7d7; /* Coconut shell border */
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.10); /* Soft tropical shadow */
+  position: relative;
+  overflow: visible;
+}
+
+/* Coconut soft sand gradient top banner */
+.addgoals-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, rgba(235,220,197,0.45), rgba(255,245,229,0.4));
+}
+
+.addgoals-quote {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.quote-text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #5a4632; /* Coconut shell dark brown */
+  margin: 0 0 6px 0;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.quote-author {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #7d6a55; /* Soft cocoa */
+  margin: 0;
+  opacity: 0.9;
+}
+
+.addgoals-illustration {
+  flex: 0 0 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-2px);
+  opacity: 0.98;
+}
+
+.addgoals-title6 {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  margin: 6px 0 24px 0;
+  color: #4f3f2f; /* Rich coconut brown */
+  letter-spacing: -0.3px;
+}
+
+.addgoals-form6 {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-group6 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group6 label {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #5e4b37; /* Medium coconut brown */
+}
+
+.form-group6 input {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #e2d6c2; /* Coconut husk beige */
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  background: #faf7f2; /* Coconut flesh soft white */
+  outline: none;
+  transition: 0.2s ease;
+  color: #4a3a2b; /* Coconut shell brown */
+}
+
+.form-group6 input::placeholder {
+  color: #b8a899; /* Mild sandy beige */
+}
+
+.form-group6 input:focus {
+  border-color: #d4b693; /* Toasted coconut */
+  background: #fff8ef; /* Lighter coconut cream */
+  box-shadow: 0 0 0 3px rgba(212,182,147,0.35);
+}
+
+/* Coconut cream button */
+.submit-btn6 {
+  margin-top: 10px;
+  padding: 16px 0;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background: #f3e7d4; /* Coconut cream beige */
+  color: #4a3826; /* Coconut-shell text */
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.submit-btn6:hover {
+  background: #fff2de; /* Brighter coconut cream */
+  transform: translateY(-2px);
+}
+
+@media (max-width: 650px) {
+  .addgoals-container6 {
+    padding: 30px;
   }
-  
-  .addgoals-title6 {
-    font-family: "Inter", sans-serif;
-    font-size: 32px;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 32px;
-    color: #f1f5f9;
-    letter-spacing: -0.3px;
-  }
-  
-  .addgoals-form6 {
-    display: flex;
+
+  .addgoals-hero {
     flex-direction: column;
-    gap: 22px;
+    align-items: flex-start;
+    gap: 10px;
   }
-  
-  .form-group6 {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+
+  .addgoals-illustration {
+    align-self: flex-end;
+    transform: translateY(0);
   }
-  
-  .form-group6 label {
-    font-family: "Inter", sans-serif;
+
+  .quote-text {
+    white-space: normal;
     font-size: 15px;
-    font-weight: 600;
-    color: #cbd5e1;
   }
-  
-  .form-group6 input {
-    padding: 14px 16px;
-    border-radius: 12px;
-    border: 1px solid #374151;
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    background: #1f2937;
-    outline: none;
-    transition: 0.2s ease;
-    color: #f1f5f9;
-  }
-  
-  .form-group6 input::placeholder {
-    color: #9ca3af;
-  }
-  
-  .form-group6 input:focus {
-    border-color: #3b82f6;
-    background: #1e293b;
-    box-shadow: 0 0 0 3px rgba(59,130,246,0.28);
-  }
-  
-  .submit-btn6 {
-    margin-top: 10px;
-    padding: 16px 0;
-    width: 100%;
-    border: none;
-    border-radius: 12px;
-    background: #e5e7eb;
-    color: #111827;
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.25s ease;
-  }
-  
-  .submit-btn6:hover {
-    background: #ffffff;
-    transform: translateY(-2px);
-  }
-  
-  @media (max-width: 650px) {
-    .addgoals-container6 {
-      padding: 30px;
-    }
-  }
-  
+}
+.goal-image {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.2));
+}

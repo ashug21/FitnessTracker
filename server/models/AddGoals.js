@@ -15,7 +15,7 @@ const AddGoalsSchema = new mongoose.Schema({
         required : true
     },
     caloriegoal : {
-        type : Number,
+        type : String,
         required : true
     },
     waterintake : {

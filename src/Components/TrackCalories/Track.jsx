@@ -1,6 +1,7 @@
 import React,{useState,useEffect, act} from "react";
 import "./Track.css";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 export default function Track14() {
 
@@ -140,6 +141,8 @@ Eating this amount daily may help you lose fat while maintaining muscle mass.
   
       </div>
     </div>
+    <br/><br/><br/><br/><br/><br/>
+    <Footer/>
   </div>
   
    

@@ -101,6 +101,17 @@
     color: #4b5563;
   }
   
+  .link-clean {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .link-clean:visited,
+  .link-clean:active,
+  .link-clean:hover {
+    text-decoration: none;
+    color: inherit;
+  }
   
   /* ================= RESPONSIVE ================= */
   @media (max-width: 860px) {

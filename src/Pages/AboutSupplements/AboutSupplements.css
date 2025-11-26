@@ -1,0 +1,117 @@
+.supplements-wrapper25 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 20px;
+    background: #f5f7fa;
+}
+
+.supplement-disclaimer25 {
+    margin-top: -20px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    color: #6b7280;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+/* MAIN CARD */
+.supplement-card25 {
+    width: 92%;
+    min-height: 330px;
+    display: flex;
+    background: #ffffff;
+    border-radius: 26px;
+    box-shadow: 0 18px 45px rgba(0,0,0,0.10);
+    overflow: hidden;
+    transition: 0.28s ease;
+
+    margin-bottom: 40px;  /* vertical spacing */
+    margin-left: 40px;    /* << LEFT MARGIN YOU WANTED */
+}
+
+.supplement-card25:last-child {
+    margin-bottom: 0;
+}
+
+.supplement-card25:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 22px 55px rgba(0,0,0,0.14);
+}
+
+/* LEFT IMAGE AREA */
+.supplement-img-box25 {
+    width: 42%;
+    background: #eef0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.supplement-img25 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* RIGHT CONTENT AREA */
+.supplement-content25 {
+    width: 58%;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.supplement-title25 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    letter-spacing: -0.6px;
+}
+
+.supplement-text25 {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+    .supplement-card25 {
+        flex-direction: column;
+        width: 95%;
+        min-height: auto;
+
+        margin-left: 0;   /* REMOVE left margin on mobile */
+        margin-bottom: 30px;
+    }
+
+    .supplement-img-box25 {
+        width: 100%;
+        padding: 34px;
+    }
+
+    .supplement-content25 {
+        width: 100%;
+        padding: 32px 26px;
+    }
+
+    .supplement-title25 {
+        font-size: 28px;
+    }
+
+    .supplement-text25 {
+        font-size: 16px;
+    }
+}

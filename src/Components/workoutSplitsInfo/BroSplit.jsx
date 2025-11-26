@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import './workoutsplit.css'
+import Footer from '../Footer/Footer'
 
 export default function BroSplit() {
 

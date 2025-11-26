@@ -1,202 +1,305 @@
-/* ---------- OUTER PAGE BACKGROUND ---------- */
-.seeGoals-outerSpacing9 {
-    padding: 28px 0;
-    background: rgba(0,0,0,0.3);
-    min-height: 40vh;
-  }
-  
-  /* ---------- NO-GOAL (EMPTY STATE) ---------- */
-  .no-data-div {
-    background: rgba(0, 0, 0, 0.3);
-    width: 92%;
-    max-width: 780px;
-    margin: 60px auto;
-    padding: 70px 24px;
-    border-radius: 14px;
-  
-    display: flex;
+/* ========== Added visuals: banner, icons, chips ========== */
+
+.seeGoals-motivation-banner9 {
+  width: 95%;
+  max-width: 920px;
+  margin: 12px auto 20px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: linear-gradient(90deg, rgba(223,238,255,0.75), rgba(200,225,255,0.85));
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.15);
+  animation: containerFade 0.32s ease both;
+}
+
+.seeGoals-motivation-left9 {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.banner-head9 {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #0b254b;
+  letter-spacing: 0.2px;
+}
+
+.banner-sub9 {
+  margin: 6px 0 0 0;
+  font-family: "Inter", sans-serif;
+  color: #3d5a80;
+  font-size: 0.95rem;
+}
+
+.seeGoals-motivation-right9 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.streak-chip9 {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg,#94d2ff,#64b5f6);
+  color: #0a1a2a;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  box-shadow: 0 6px 18px rgba(100,181,246,0.25);
+}
+
+.banner-icon9 {
+  width: 78px;
+  height: auto;
+  opacity: 0.95;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,0.35));
+}
+
+/* ICON inside cards */
+.card-icon9 {
+  width: 28px;
+  height: 28px;
+  opacity: 0.95;
+  margin-left: 10px;
+}
+
+/* footer chip under card */
+.goal-footer-chip9 {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 6px 10px;
+  background: rgba(255,255,255,0.55);
+  color: #233a57;
+  font-size: 0.85rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.05);
+  font-weight: 600;
+}
+
+@media (max-width: 780px) {
+  .seeGoals-motivation-banner9 {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-    border: 1px solid rgba(255,255,255,0.03);
-    box-shadow: 0 12px 36px rgba(2,6,23,0.55);
-    backdrop-filter: blur(6px);
-  
-    animation: noDataFade 0.45s ease both;
-  }
-  
-  .no-data {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-    font-family: "Inter", sans-serif;
-    color: #e6eef8;
-    letter-spacing: 0.6px;
-    opacity: 0.95;
-    margin: 0;
-  }
-  
-  .no-data-sub {
-    font-size: 1rem;
-    color: #9fb0c6;
-    margin-top: 10px;
-    text-align: center;
-    max-width: 600px;
-    line-height: 1.45;
-    opacity: 0.9;
-  }
-  
-  .null {
-    height: 200px;
-    width: 100%;
-    background: rgba(0,0,0,0);
-  }
-  
-  /* no-data fade animation */
-  @keyframes noDataFade {
-    from { opacity: 0; transform: translateY(12px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  
-  /* ---------- MAIN GOALS CARD CONTAINER ---------- */
-  .seeGoals-bigContainer9 {
-    width: 95%;
-    max-width: 920px;
-    margin: 32px auto;
-    padding: 20px 22px;
-    background: linear-gradient(180deg,#0f172a,#0b1220);
-    border: 1px solid rgba(255,255,255,0.03);
-    border-radius: 16px;
-    box-shadow: 0 14px 40px rgba(2,6,23,0.6);
-    position: relative;
-  }
-  
-  /* ---------- DELETE BUTTON ---------- */
-  .container-delete9 {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.03);
-    padding: 8px;
-    border-radius: 10px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform .12s ease, background .12s ease, box-shadow .12s ease;
-    backdrop-filter: blur(4px);
-  }
-  
-  .container-delete9 img {
-    width: 22px;
-    height: 22px;
-    opacity: 0.85;
-    transition: 0.25s ease;
-  }
-  
-  .container-delete9:hover {
-    transform: translateY(-2px);
-    background: rgba(255,255,255,0.02);
-    box-shadow: 0 6px 18px rgba(2,6,23,0.6);
-  }
-  
-  .container-delete9:hover img {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-  
-  /* ---------- TITLE ---------- */
-  .goals-title9 {
-    font-family: "Inter", sans-serif;
-    font-size: 28px;
-    font-weight: 800;
     text-align: left;
-    color: #e6eef8;
-    margin: 6px 8px 20px 8px;
+    gap: 10px;
   }
-  
-  /* ---------- GOAL CARDS ---------- */
-  .goal-card9 {
+  .seeGoals-motivation-right9 {
     width: 100%;
-    background: linear-gradient(180deg,#0f1726,#101521);
-    border: 1px solid rgba(255,255,255,0.03);
-    border-radius: 12px;
-    padding: 14px 16px;
-    margin-bottom: 14px;
-    box-shadow: 0 6px 18px rgba(2,6,23,0.6);
-    transition: transform .16s ease, box-shadow .16s ease;
+    justify-content: flex-start;
   }
-  
-  .goal-card9:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(2,6,23,0.7);
+  .banner-icon9 {
+    width: 60px;
+    height: auto;
   }
-  
-  /* ---------- CARD HEADER ---------- */
-  .goal-header9 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+}
+
+/* Outer spacing */
+.seeGoals-outerSpacing9 {
+  padding: 22px 0;
+  background: rgba(215,230,255,0.4);
+  min-height: 42vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- NO GOALS (EMPTY STATE) ---------- */
+.no-data-div9 {
+  background: rgba(235,245,255,0.75);
+  width: 92%;
+  max-width: 720px;
+  margin: 40px auto 30px auto;
+  padding: 60px 28px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  backdrop-filter: blur(4px);
+  animation: noDataRise .35s ease both;
+}
+
+.no-data9 {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: "Inter", sans-serif;
+  color: #0a2b4a;
+  margin: 0;
+}
+
+.no-data-text9 {
+  margin-top: 16px;
+  font-size: 1.05rem;
+  color: #3d5a80;
+  font-family: "Inter", sans-serif;
+  max-width: 580px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* -------- FIXED: MORE SPACE BETWEEN BUTTONS -------- */
+.no-data-div9 a {
+  display: block;
+  margin: 12px 0;
+}
+
+.no-data-btn9 {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg,#6ab7ff,#4a90e2);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: .18s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.no-data-btn9:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg,#7cc4ff,#5aa1f0);
+}
+
+.null9 {
+  height: 120px;
+  width: 100%;
+}
+
+@keyframes noDataRise {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- GOALS CONTAINER ---------- */
+.seeGoals-bigContainer9 {
+  width: 95%;
+  max-width: 920px;
+  margin: 18px auto 24px;
+  padding: 20px 20px;
+  background: linear-gradient(180deg,#e8f4ff,#d6ecff);
+  border: 1px solid rgba(0,0,0,0.07);
+  border-radius: 14px;
+  box-shadow: 0 14px 44px rgba(0,0,0,0.12);
+  position: relative;
+  animation: containerFade 0.32s ease both;
+}
+
+@keyframes containerFade {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- DELETE BUTTON ---------- */
+.container-delete9 {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(0,0,0,0.07);
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .12s ease;
+}
+
+.container-delete9 img {
+  width: 20px;
+  height: 20px;
+}
+
+.container-delete9:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.9);
+}
+
+/* ---------- TITLE ---------- */
+.goals-title9 {
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #0b254b;
+  margin: 8px 6px 18px 6px;
+  letter-spacing: 0.4px;
+}
+
+/* ---------- GOAL CARDS ---------- */
+.goal-card9 {
+  width: 100%;
+  background: linear-gradient(180deg,#f0f6ff,#e0eeff);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 12px;
+  padding: 14px 14px;
+  margin-bottom: 12px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+  transition: .15s ease;
+}
+
+.goal-card9:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+.goal-header9 h2 {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #365a7f;
+  font-weight: 700;
+}
+
+.goal-value9 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #0a2b4a;
+  margin-top: 8px;
+}
+
+.goal-note9 {
+  margin-top: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #527191;
+  line-height: 1.35;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 780px) {
+  .no-data-div9 {
+      margin: 20px 12px;
+      padding: 40px 18px;
+      max-width: 94%;
   }
-  
-  .goal-header9 h2 {
-    margin: 0;
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-    color: #b8c7d8;
-    font-weight: 700;
-  }
-  
-  /* ---------- MAIN VALUE ---------- */
-  .goal-value9 {
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    color: #ffffff;
-    margin-top: 8px;
-  }
-  
-  /* ---------- NOTE UNDER VALUE ---------- */
-  .goal-note9 {
-    margin-top: 6px;
-    font-family: "Inter", sans-serif;
-    font-size: 13px;
-    color: #9fb0c6;
-    line-height: 1.25;
-  }
-  
-  /* ---------- RESPONSIVE ADJUSTMENTS ---------- */
-  @media (max-width: 780px) {
-    .seeGoals-bigContainer9 {
-      padding: 18px;
-      margin: 18px;
-    }
-  
-    .goals-title9 {
-      font-size: 22px;
-      text-align: center;
-      margin-bottom: 18px;
-    }
-  
-    .goal-card9 {
-      padding: 12px 12px;
-    }
-  
-    .goal-value9 {
-      font-size: 16px;
-    }
-  
-    .no-data-div {
-      padding: 50px 18px;
-      margin: 40px 14px;
-    }
-  
-    .no-data {
+
+  .no-data9 {
       font-size: 1.6rem;
-    }
   }
-  
+
+  .no-data-text9 {
+      font-size: 0.95rem;
+  }
+
+  .no-data-btn9 {
+      width: 100%;
+  }
+
+  .seeGoals-bigContainer9 {
+      margin: 14px 10px;
+      padding: 16px;
+  }
+
+  .null9 {
+      height: 90px;
+  }
+}

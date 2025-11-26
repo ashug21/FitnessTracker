@@ -1,107 +1,115 @@
-body{
-    background: #fff;
+body {
+  background: #f5f7fa;
 }
 
 .addworkout-container5 {
-    width: 90%;
-    max-width: 650px;
-    margin: 70px auto;
-    padding: 40px 45px;
-    background: #111827;
-    border: 1px solid #1f2937;
-    border-radius: 20px;
-    box-shadow: 0 12px 32px rgba(0,0,0,0.45);
-  }
-  
-  .addworkout-title5 {
-    font-family: "Inter", sans-serif;
-    font-size: 32px;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 32px;
-    color: #f1f5f9;
-    letter-spacing: -0.3px;
-  }
-  
-  .addworkout-form5 {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-  }
-  
-  .form-group5 {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .form-group5 label {
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: #cbd5e1;
-  }
-  
-  .form-group5 input {
-    padding: 14px 16px;
-    border-radius: 12px;
-    border: 1px solid #374151;
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    background: #1f2937;
-    outline: none;
-    transition: 0.2s ease;
-    color: #f1f5f9;
-  }
-  
-  .form-group5 input::placeholder {
-    color: #9ca3af;
-  }
-  
-  .form-group5 input:focus {
-    border-color: #3b82f6;
-    background: #1e293b;
-    box-shadow: 0 0 0 3px rgba(59,130,246,0.28);
-  }
-  
+  width: 90%;
+  max-width: 650px;
+  margin: 70px auto;
+  padding: 40px 45px;
+  background: #ffffff;
+  border: 1px solid #efe7d7;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.10);
+  position: relative;
+  overflow: visible;
+}
+
+/* Title */
+.addworkout-title5 {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 28px;
+  color: #4f3f2f;
+  letter-spacing: -0.3px;
+}
+
+/* Form layout */
+.addworkout-form5 {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Groups */
+.form-group5 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group5 label {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #5e4b37;
+}
+
+/* Inputs */
+.form-group5 input {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #e2d6c2;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  background: #faf7f2;
+  outline: none;
+  transition: 0.2s ease;
+  color: #4a3a2b;
+}
+
+.form-group5 input::placeholder {
+  color: #b8a899;
+}
+
+.form-group5 input:focus {
+  border-color: #d4b693;
+  background: #fff8ef;
+  box-shadow: 0 0 0 3px rgba(212,182,147,0.35);
+}
+
+/* Row (sets / reps / weight) */
+.form-group-row5 {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.form-group-row5 .form-group5 {
+  flex: 1;
+}
+
+/* Button */
+.submit-btn5 {
+  margin-top: 10px;
+  padding: 16px 0;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background: #f3e7d4;
+  color: #4a3826;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.submit-btn5:hover {
+  background: #fff2de;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 650px) {
   .form-group-row5 {
-    display: flex;
-    gap: 16px;
-    width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  
-  .form-group-row5 .form-group5 {
-    flex: 1;
+
+  .addworkout-container5 {
+    padding: 30px;
   }
-  
-  .submit-btn5 {
-    margin-top: 10px;
-    padding: 16px 0;
-    width: 100%;
-    border: none;
-    border-radius: 12px;
-    background: #e5e7eb;
-    color: #111827;
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.25s ease;
-  }
-  
-  .submit-btn5:hover {
-    background: #ffffff;
-    transform: translateY(-2px);
-  }
-  
-  @media (max-width: 650px) {
-    .form-group-row5 {
-      flex-direction: column;
-    }
-  
-    .addworkout-container5 {
-      padding: 30px;
-    }
-  }
-  
+}
