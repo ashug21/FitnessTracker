@@ -19,7 +19,7 @@ const AddGoalsSchema = new mongoose.Schema({
         required : true
     },
     waterintake : {
-        type : Number,
+        type : String,
         required : true
     },
 });

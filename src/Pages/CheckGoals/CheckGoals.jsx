@@ -98,7 +98,7 @@ export default function CheckGoals20() {
               stepgoal: 5000,
               workoutweek: 5,
               caloriegoal: "Maintainence -200",
-              waterintake: 3
+              waterintake: "3"
             })}>
               Add this to your current goal 👉🏻
             </button>
@@ -139,7 +139,7 @@ export default function CheckGoals20() {
                 stepgoal: 2000,
                 workoutweek: 6,
                 caloriegoal: "Maintainence + 400",
-                waterintake: 4
+                waterintake: "4"
           })}>
             Add this to your current goal 👉🏻
           </button>
@@ -180,7 +180,7 @@ export default function CheckGoals20() {
             stepgoal: 2000,
             workoutweek: 6,
             caloriegoal: "Maintainence",
-            waterintake: 3
+            waterintake: "3.5"
           })}>
             Add this to your current goal 👉🏻
           </button>
@@ -221,7 +221,7 @@ export default function CheckGoals20() {
                 stepgoal: 3000,
                 workoutweek: 6,
                 caloriegoal: "Maintainence +200",
-                waterintake: 4
+                waterintake: "4"
           })}>
             Add this to your current goal 👉🏻
           </button>

@@ -38,7 +38,11 @@ export default function SeeGoals() {
     return (
       <div>
         <Navbar />
-        <br/><br/><br/><br/><br/>
+
+          <div className="checkgoals-newpara20">
+                    <p className="checkgoals-para20">Dont know Maintainence Calories? Calculate Now</p>
+                   <Link to="/track-calories"><button className="checkgoals-parabutton20">Calculate Maintaince Calories</button></Link> 
+                </div>
 
         <div className="no-data-div9">
           <h1 className="no-data9">No Goals are set</h1>
@@ -49,6 +53,8 @@ export default function SeeGoals() {
           <Link to="/add-goals"><button className="no-data-btn9">Add Goals</button></Link>
          <Link to="/checkgoals"><button className="no-data-btn9">Check Out Goals</button></Link> 
         </div>
+
+        
         <br/><br/><br/>  <br/><br/><br/>  <br/><br/><br/>
         <Footer />
       </div>

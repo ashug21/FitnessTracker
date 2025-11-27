@@ -70,7 +70,7 @@ export default function AddGoals() {
         <form className="addgoals-form6" onSubmit={handleSubmit}>
 
           <div className="form-group6">
-            <label>Goal</label>
+            <label>GOAL</label>
             <input
               onChange={(e) => setGoal(e.target.value)}
               value={goal}
@@ -80,7 +80,7 @@ export default function AddGoals() {
           </div>
 
           <div className="form-group6">
-            <label>Step Goal</label>
+            <label>STEP GOAL</label>
             <input
               onChange={(e) => setStepGoal(e.target.value)}
               value={stepgoal}
@@ -90,7 +90,7 @@ export default function AddGoals() {
           </div>
 
           <div className="form-group6">
-            <label>Workout / Week</label>
+            <label>NUMBER OF DAYS YOU WORKOUT PER WEEK</label>
             <input
               onChange={(e) => setWorkoutWeek(e.target.value)}
               value={workoutweek}
@@ -100,7 +100,7 @@ export default function AddGoals() {
           </div>
 
           <div className="form-group6">
-            <label>Daily Calories Goal</label>
+            <label>DAILY CALORIES GOAL</label>
             <input
               onChange={(e) => setCalorieGoal(e.target.value)}
               value={caloriegoal}
@@ -110,12 +110,12 @@ export default function AddGoals() {
           </div>
 
           <div className="form-group6">
-            <label>Water Intake (Liters)</label>
+            <label>WATER INTAKE (Liters)</label>
             <input
               onChange={(e) => setWaterIntake(e.target.value)}
               value={waterintake}
-              type="number"
-              placeholder="e.g., 3"
+              type="text"
+              placeholder="e.g, 1.5 , 3"
             />
           </div>
 
