@@ -13,7 +13,7 @@ export default function SeeGoals() {
 
   const getGoals = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/ag/getGoals");
+      const res = await axios.get("https://fitnesstracker-1-ud7g.onrender.com/ag/getGoals");
       console.log("BACKEND:", res.data.data);
       setData(res.data.data[0]);               
     } catch (error) {
@@ -23,7 +23,7 @@ export default function SeeGoals() {
 
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/ag/deleteGoals/${id}`);
+      await axios.delete(`https://fitnesstracker-1-ud7g.onrender.com/ag/deleteGoals/${id}`);
       getGoals();
     } catch (error) {
       console.error("Delete error:", error);

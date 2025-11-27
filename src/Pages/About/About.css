@@ -1,0 +1,178 @@
+/* About page — matches existing app look & feel */
+
+/* Page wrapper */
+.about-page {
+    background: transparent;
+    color: #e6eef8;
+    min-height: 100vh;
+}
+
+/* HERO */
+.about-hero {
+    width: 92%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 36px;
+    border-radius: 18px;
+    display: flex;
+    gap: 28px;
+    align-items: stretch;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(15,23,42,0.9), rgba(30,41,59,0.85));
+    box-shadow: 0 24px 60px rgba(0,0,0,0.45);
+    position: relative;
+    overflow: hidden;
+}
+
+/* hero content (left) */
+.about-hero-content {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 2;
+}
+
+.about-title {
+    font-size: 44px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: -1px;
+    background: linear-gradient(90deg,#fff,#c7ddff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-sub {
+    margin: 0;
+    font-size: 18px;
+    color: #cbd8ea;
+    max-width: 720px;
+    line-height: 1.45;
+}
+
+/* CTA row */
+.about-cta-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.about-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    color: #fff;
+    background: linear-gradient(90deg,#2563eb,#7c3aed);
+    box-shadow: 0 8px 24px rgba(37,99,235,0.18);
+    transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+}
+.about-cta:hover { transform: translateY(-4px); box-shadow: 0 12px 34px rgba(37,99,235,0.24); }
+.about-cta.ghost {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.06);
+    color: #dbeafe;
+    box-shadow: none;
+}
+
+/* hero art (right) */
+.about-hero-art {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hero-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 14px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255,255,255,0.03);
+    color: #dbeafe;
+}
+
+.hero-card h4 { margin: 0 0 8px 0; font-size: 16px; color: #fff; }
+.hero-card ul { margin: 0; padding-left: 18px; color: #c7ddff; }
+.hero-card li { margin-bottom: 6px; font-size: 14px; }
+
+/* sections */
+.about-section {
+    width: 92%;
+    max-width: 1200px;
+    margin: 28px auto;
+    padding: 28px;
+    border-radius: 14px;
+
+    /* NEW CLEANER BACKGROUND */
+    background: rgba(17, 25, 40, 0.55);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 14px 36px rgba(0,0,0,0.35);
+}
+
+/* Features grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.features-grid article {
+    padding: 18px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.05);
+    color: #dbeafe;
+}
+
+.features-grid h3 { margin: 0 0 8px 0; font-size: 18px; color: #fff; }
+.features-grid p { margin: 0; color: #bcd3f5; font-size: 14px; line-height: 1.45; }
+
+/* Tech stack */
+.stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+.stack-list span {
+    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.03);
+    color: #dbeafe;
+    border: 1px solid rgba(255,255,255,0.06);
+    font-size: 13px;
+}
+
+/* repo link & contact */
+.repo-link { margin-top: 12px; color: #bcd3f5; font-size: 13px; }
+.contact .contact-links { display:flex; gap:12px; margin-top:12px; }
+.contact .contact-links a {
+    color: #dbeafe;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.03);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-hero { flex-direction: column; gap: 18px; padding: 20px; }
+    .about-hero-art { width: 100%; order: 2; }
+    .about-hero-content { order: 1; }
+    .about-title { font-size: 34px; }
+}

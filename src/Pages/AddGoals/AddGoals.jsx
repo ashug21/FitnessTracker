@@ -19,7 +19,7 @@ export default function AddGoals() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/ag/addGoals",
+        "https://fitnesstracker-1-ud7g.onrender.com/ag/addGoals",
         {
           goal,
           stepgoal,
@@ -51,21 +51,21 @@ export default function AddGoals() {
     <div>
       <Navbar />
 
-
       <div className="addgoals-container6">
-      <h1 className="addgoals-title6">Set Your Goals</h1>
+        <h1 className="addgoals-title6">Set Your Goals</h1>
+
         <div className="addgoals-hero">
           <div className="addgoals-quote">
-            <p className="quote-text">“Small daily improvements are the key to  <br/> long-term progress.”</p>
+            <p className="quote-text">
+              “Small daily improvements are the key to  <br/> long-term progress.”
+            </p>
             <p className="quote-author">— Compound Gains</p>
           </div>
 
           <div className="addgoals-illustration">
-  <img src={goal_img} alt="goal illustration" className="goal-image"/>
-</div>
+            <img src={goal_img} alt="goal illustration" className="goal-image"/>
+          </div>
         </div>
-
-      
 
         <form className="addgoals-form6" onSubmit={handleSubmit}>
 

@@ -17,7 +17,7 @@ export default function AddWorkout() {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8080/aw/addWorkout", {
+      const response = await axios.post("https://fitnesstracker-1-ud7g.onrender.com/aw/addWorkout", {
         date,
         exercise,
         sets,

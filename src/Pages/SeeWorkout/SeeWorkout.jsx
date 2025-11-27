@@ -11,7 +11,7 @@ const SeeWorkout = () => {
 
   const getWorkoutdata = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/aw/getWorkout");
+      const res = await axios.get("https://fitnesstracker-1-ud7g.onrender.com/aw/getWorkout");
       console.log("BACKEND:", res.data.data);
       setData(res.data.data);
     } catch (error) {
@@ -21,7 +21,7 @@ const SeeWorkout = () => {
 
   const deleteWorkoutData = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/aw/deleteworkout/${id}`);
+      await axios.delete(`https://fitnesstracker-1-ud7g.onrender.com/aw/deleteworkout/${id}`);
       getWorkoutdata();
     } catch (error) {
       console.error("Delete error:", error);
@@ -69,7 +69,8 @@ const SeeWorkout = () => {
           ))}
         </div>
       </div>
-<br/><br/><br/><br/><br/><br/>
+
+      <br/><br/><br/><br/><br/><br/>
       <Footer />
     </div>
   );
