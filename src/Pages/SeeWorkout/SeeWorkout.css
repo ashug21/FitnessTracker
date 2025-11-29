@@ -41,7 +41,6 @@
   text-shadow: 0 8px 24px rgba(59,130,246,0.3);
 }
 
-/* 4 CARDS FIXED */
 .workout-grid11 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -55,8 +54,8 @@
   border-radius: 18px;
   padding: 20px;
   width: 100%;
-  max-width: 250px;  /* REDUCED WIDTH */
-  height: 240px;     /* REDUCED HEIGHT */
+  max-width: 250px;
+  height: 240px;
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 14px 35px rgba(0,0,0,0.35);
   transition: 0.35s ease;
@@ -123,7 +122,6 @@
   background: linear-gradient(135deg, #f87171, #ef4444);
 }
 
-/* NO DATA */
 .no-data-div11 {
   width: 90%;
   max-width: 800px;
@@ -144,7 +142,127 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* RESPONSIVE */
+.analytics-section5 {
+  margin-top: 60px;
+  padding: 35px;
+  background: #fffdf9;
+  border-radius: 20px;
+  border: 1px solid #efe4d4;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.06);
+}
+
+.analytics-title5 {
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: #4f3f2f;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.loading5 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #7d6551;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.analytics-grid5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 18px;
+}
+
+.analytics-card5 {
+  padding: 22px;
+  background: #faf4ec;
+  border-radius: 16px;
+  border: 1px solid #e8dccb;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  transition: 0.2s ease;
+}
+
+.analytics-card5:hover {
+  background: #fff7ed;
+  transform: translateY(-2px);
+}
+
+.analytics-card5 h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #4a3a2b;
+  margin-bottom: 8px;
+}
+
+.analytics-card5 p {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #3d2e21;
+}
+
+.muscle-chart-container {
+  margin-top: 30px;
+  padding: 24px;
+  background: #fffdf9;
+  border-radius: 18px;
+  border: 1px solid #efe4d4;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.muscle-chart-title {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #4f3f2f;
+  margin-bottom: 16px;
+}
+
+.muscle-chart-wrapper {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.muscle-chart-canvas {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 260px !important;
+}
+
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.chart-legend-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background: #faf4ec;
+  border: 1px solid #efe4d4;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5e4b37;
+}
+
+.chart-legend-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
 @media (max-width: 1200px) {
   .workout-grid11 {
     grid-template-columns: repeat(3, 1fr);
@@ -157,6 +275,18 @@
   }
   .workout-card11 {
     max-width: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .muscle-chart-wrapper {
+    max-width: 250px;
+  }
+  .muscle-chart-canvas {
+    max-height: 220px !important;
+  }
+  .muscle-chart-title {
+    font-size: 18px;
   }
 }
 

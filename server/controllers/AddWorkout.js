@@ -1,6 +1,111 @@
 const AddWorkout = require('../models/AddWorkout');
 
 
+const MUSCLE_MAP = {
+
+  /* CHEST */
+  "bench press": "chest",
+  "flat bench press": "chest",
+  "incline bench press": "chest",
+  "decline bench press": "chest",
+  "push ups": "chest",
+  "wide push ups": "chest",
+  "incline press": "chest",
+  "chest press": "chest",
+  "dumbbell press": "chest",
+  "incline dumbbell press": "chest",
+  "decline dumbbell press": "chest",
+  "dips": "chest",
+  "chest dips": "chest",
+  "cable fly": "chest",
+  "machine fly": "chest",
+  "pec deck": "chest",
+
+  /* BACK */
+  "deadlift": "back",
+  "romanian deadlift": "back",
+  "rld": "back",
+  "lat pulldown": "back",
+  "pull ups": "back",
+  "chin ups": "back",
+  "barbell row": "back",
+  "dumbbell row": "back",
+  "inverted row": "back",
+  "t-bar row": "back",
+  "seated row": "back",
+  "machine row": "back",
+  "cable row": "back",
+  "face pull": "back",
+  "shrug": "back",
+  "barbell shrug": "back",
+  "dumbbell shrug": "back",
+
+  /* LEGS */
+  "squat": "legs",
+  "back squat": "legs",
+  "front squat": "legs",
+  "leg press": "legs",
+  "lunges": "legs",
+  "walking lunges": "legs",
+  "bulgarian split squat": "legs",
+  "romanian deadlift": "legs",
+  "hamstring curl": "legs",
+  "leg curl": "legs",
+  "seated leg curl": "legs",
+  "lying leg curl": "legs",
+  "leg extension": "legs",
+  "calf raise": "legs",
+  "standing calf raise": "legs",
+  "seated calf raise": "legs",
+  "hip thrust": "legs",
+  "glute bridge": "legs",
+
+  /* SHOULDERS */
+  "overhead press": "shoulders",
+  "shoulder press": "shoulders",
+  "military press": "shoulders",
+  "arnold press": "shoulders",
+  "lateral raise": "shoulders",
+  "side lateral raise": "shoulders",
+  "front raise": "shoulders",
+  "upright row": "shoulders",
+  "upright barbell row": "shoulders",
+  "machine shoulder press": "shoulders",
+
+  /* ARMS */
+  "bicep curl": "arms",
+  "barbell curl": "arms",
+  "dumbbell curl": "arms",
+  "incline curl": "arms",
+  "hammer curl": "arms",
+  "hammer curls": "arms",
+  "preacher curl": "arms",
+  "cable curl": "arms",
+  "rope curl": "arms",
+
+  "tricep pushdown": "arms",
+  "triceps pushdown": "arms",
+  "rope pushdown": "arms",
+  "tricep extension": "arms",
+  "overhead tricep extension": "arms",
+  "skullcrusher": "arms",
+  "skull crushers": "arms",
+  "close grip bench press": "arms",
+
+  /* ABS / CORE (optional but useful) */
+  "crunch": "core",
+  "crunches": "core",
+  "sit ups": "core",
+  "leg raise": "core",
+  "hanging leg raise": "core",
+  "plank": "core",
+  "cable crunch": "core",
+  "russian twist": "core",
+  "mountain climber": "core"
+};
+
+
+
 const createWorkout = async (req, res) => {
   try {
     const { date, exercise, sets, reps, weight } = req.body;
@@ -57,8 +162,105 @@ const deleteUserWorkout = async (req, res) => {
   }
 };
 
+const getAnalytics = async (req, res) => {
+  try {
+    const workouts = await AddWorkout.find();
+
+
+    workouts.forEach(w => {
+      if (typeof w.exercise === "string") {
+        w.exercise = w.exercise.trim().toLowerCase();
+      }
+    });
+
+    const totalWorkouts = workouts.length;
+
+    const totalVolume = workouts.reduce((acc, w) => {
+      const sets = Number(w.sets) || 0;
+      const reps = Number(w.reps) || 0;
+
+
+      const weight = Number(
+        String(w.weight).replace(/[^0-9.]/g, "")
+      ) || 0;
+
+      return acc + sets * reps * weight;
+    }, 0);
+
+
+    let exerciseCount = {};
+    workouts.forEach(w => {
+      exerciseCount[w.exercise] = (exerciseCount[w.exercise] || 0) + 1;
+    });
+
+    const topExercise =
+      Object.keys(exerciseCount).length > 0
+        ? Object.keys(exerciseCount).reduce((a, b) =>
+            exerciseCount[a] > exerciseCount[b] ? a : b
+          )
+        : "none";
+
+    // Convert back to title case
+    const topExerciseFormatted = topExercise.replace(/\w\S*/g, word =>
+      word.charAt(0).toUpperCase() + word.substring(1).toLowerCase()
+    );
+
+    return res.json({
+      success: true,
+      totalWorkouts,
+      totalVolume,
+      topExercise: topExerciseFormatted
+    });
+
+  } catch (e) {
+    return res.json({ success: false, message: e.message });
+  }
+};
+
+
+const getMuscleDistribution = async (req, res) => {
+  try {
+    const workouts = await AddWorkout.find();
+
+    const muscleVolume = {
+      chest: 0,
+      back: 0,
+      legs: 0,
+      shoulders: 0,
+      arms: 0
+    };
+
+    workouts.forEach(w => {
+      const exercise = String(w.exercise).trim().toLowerCase();
+      
+
+      const muscle = MUSCLE_MAP[exercise];
+      if (!muscle) return;
+      
+      const sets = Number(w.sets) || 0;
+      const reps = Number(w.reps) || 0;
+      const weight = Number(String(w.weight).replace(/[^0-9.]/g, "")) || 0;
+
+      const volume = sets * reps * weight;
+
+      muscleVolume[muscle] += volume;
+    });
+
+    return res.json({
+      success: true,
+      muscleVolume
+    });
+
+  } catch (e) {
+    return res.json({ success: false, message: e.message });
+  }
+};
+
+
 module.exports = {
     createWorkout,
     getUserWorkout,
-    deleteUserWorkout
+    deleteUserWorkout,
+    getAnalytics,
+    getMuscleDistribution
 };

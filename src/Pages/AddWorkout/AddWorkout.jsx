@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./AddWorkout.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
@@ -12,6 +12,7 @@ export default function AddWorkout() {
   const [sets, setSets] = useState("");
   const [reps, setReps] = useState("");
   const [weight, setWeight] = useState("");
+  
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -47,7 +48,6 @@ export default function AddWorkout() {
       <div className="addworkout-container5">
         <h1 className="addworkout-title5">Add Workout Details</h1>
 
-        {/* Added Coconut Quote Banner */}
         <div className="addgoals-hero">
           <div className="addgoals-quote">
             <p className="quote-text">
@@ -117,6 +117,8 @@ export default function AddWorkout() {
           <button type="submit" className="submit-btn5">Add Workout</button>
         </form>
       </div>
+
+    
 
       <Footer />
     </div>
