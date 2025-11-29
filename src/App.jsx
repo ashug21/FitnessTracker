@@ -20,6 +20,7 @@ import Arnold from './Components/workoutSplitsInfo/Arnold'
 import CheckGoals from './Pages/CheckGoals/CheckGoals'
 import AboutSupplements from './Pages/AboutSupplements/AboutSupplements'
 import About from './Pages/About/About'
+import Fooditems from './Pages/FoodItems/Fooditems'
 
 
 const App = () => {
@@ -46,6 +47,7 @@ const App = () => {
         <Route path='/checkgoals' element={<CheckGoals/>} />
         <Route path='/aboutSupplements' element={<AboutSupplements/>} />
         <Route path='/about' element={<About/>} />
+        <Route path='/diet' element={<Fooditems/>} />
       </Routes>
     </div>
   )

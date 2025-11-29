@@ -1,9 +1,32 @@
-import React from "react";
+import React,{useState , useEffect} from "react";
 import result from "../../assets/results.jpg";
 import "./Body.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { app } from "../../../Firebase";
+
+
+
+const auth = getAuth(app)
 
 export default function Body() {
+  const navigate = useNavigate();
+
+  const [user , setUser] = useState(null);
+
+  useEffect(() => {
+    onAuthStateChanged(auth , user => {
+      if(user){
+        setUser(user);
+      }
+      else{
+        setUser(null);
+      }
+    })
+  },[])
+
+
+  if(user){
   return (
     <div className="body-wrapper1">
       {/* HERO SECTION */}
@@ -67,4 +90,70 @@ export default function Body() {
       </section>
     </div>
   );
+}
+else{
+  return (
+    <div className="body-wrapper1">
+      {/* HERO SECTION */}
+      <section className="hero1">
+        <div className="hero-text1">
+          <h1>Track. Improve. Transform.</h1>
+          <p>
+            Your fitness journey starts here. Track workouts, set goals, and
+            become the best version of yourself.
+          </p>
+          <Link to="/add-workout">
+            <button className="hero-btn1">Start Now</button>
+          </Link>
+        </div>
+
+        <div className="hero-img1">
+          <img
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b"
+            alt="Fitness Hero"
+          />
+        </div>
+      </section>
+
+      {/* FEATURE SECTION */}
+      <section className="features1">
+        <div className="feature-card1">
+          <Link to="/signup" className="link-clean">
+         
+          <img
+            src="https://images.unsplash.com/photo-1599058917212-d750089bc07e"
+            alt="Workout tracking"
+          />
+          <h3>Track Workouts</h3>
+          <p>Monitor your daily exercises and measure improvement over time.</p>
+          </Link>
+        </div>
+
+        <div className="feature-card1">
+          <Link to="/signup" className="link-clean">
+          <img
+            src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74"
+            alt="Goals"
+          />
+          <h3>Set Goals</h3>
+          <p>
+            Create powerful fitness goals and stay focused on achieving them.
+          </p>
+          </Link>
+        </div>
+
+        <div className="feature-card1">
+          <Link className="link-clean" to="/workout-splits">
+            <img src={result} alt="Results" />
+
+            <h3>Choose Your Workout Split</h3>
+            <p>
+              Analyze what suits you best and stay consistent.
+            </p>
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+}
 }
