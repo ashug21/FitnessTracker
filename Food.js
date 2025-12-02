@@ -14,7 +14,7 @@ export const food = [
     prepTime: "15 min",
     difficulty: "easy",
     tags: ["high_protein", "lean"],
-    image: "https://source.unsplash.com/600x400/?grilled-chicken"
+    image: "https://cdn.pixabay.com/photo/2016/03/05/19/02/grilled-chicken-1239247_640.jpg"
   },
 
   {
@@ -32,7 +32,7 @@ export const food = [
     prepTime: "10 min",
     difficulty: "easy",
     tags: ["fiber_rich", "complex_carbs"],
-    image: "https://source.unsplash.com/600x400/?oatmeal,berries"
+    image: "https://cdn.pixabay.com/photo/2017/03/31/23/45/berries-2195348_640.jpg"
   },
 
   {
@@ -50,7 +50,7 @@ export const food = [
     prepTime: "40 min",
     difficulty: "medium",
     tags: ["indian", "plant_protein"],
-    image: "https://source.unsplash.com/600x400/?rajma,kidney-beans-curry"
+    image: "https://cdn.pixabay.com/photo/2020/05/17/17/25/kidney-bean-curry-5184193_640.jpg"
   },
 
   {
@@ -68,7 +68,7 @@ export const food = [
     prepTime: "20 min",
     difficulty: "easy",
     tags: ["omega_3", "high_protein"],
-    image: "https://source.unsplash.com/600x400/?salmon,steamed-vegetables"
+    image: "https://cdn.pixabay.com/photo/2016/02/17/20/03/salmon-1208141_640.jpg"
   },
 
   {
@@ -86,7 +86,7 @@ export const food = [
     prepTime: "20 min",
     difficulty: "medium",
     tags: ["high_protein", "indian"],
-    image: "https://source.unsplash.com/600x400/?paneer-bhurji,paneer"
+    image: "https://cdn.pixabay.com/photo/2023/01/20/09/35/paneer-7731398_640.jpg"
   },
 
   {
@@ -104,7 +104,7 @@ export const food = [
     prepTime: "5 min",
     difficulty: "easy",
     tags: ["probiotic", "breakfast"],
-    image: "https://source.unsplash.com/600x400/?greek-yogurt,parfait"
+    image: "https://cdn.pixabay.com/photo/2017/02/13/15/00/yogurt-2065488_640.jpg"
   },
 
   {
@@ -122,7 +122,7 @@ export const food = [
     prepTime: "12 min",
     difficulty: "easy",
     tags: ["complex_carbs", "fiber"],
-    image: "https://source.unsplash.com/600x400/?sweet-potato,mash"
+    image: "https://cdn.pixabay.com/photo/2020/11/28/09/25/sweet-potato-5784023_640.jpg"
   },
 
   {
@@ -140,7 +140,7 @@ export const food = [
     prepTime: "10 min",
     difficulty: "easy",
     tags: ["protein"],
-    image: "https://source.unsplash.com/600x400/?boiled-eggs"
+    image: "https://cdn.pixabay.com/photo/2018/06/18/16/05/egg-3481397_640.jpg"
   },
 
   {
@@ -158,7 +158,7 @@ export const food = [
     prepTime: "10 min",
     difficulty: "easy",
     tags: ["plant_protein", "raw"],
-    image: "https://source.unsplash.com/600x400/?sprouts-salad"
+    image: "https://cdn.pixabay.com/photo/2015/03/26/09/41/salad-690254_640.jpg"
   },
 
   {
@@ -176,7 +176,7 @@ export const food = [
     prepTime: "25 min",
     difficulty: "medium",
     tags: ["gym_meal"],
-    image: "https://source.unsplash.com/600x400/?chicken-rice,bowl"
+    image: "https://cdn.pixabay.com/photo/2016/11/21/15/53/rice-1846364_640.jpg"
   },
 
   {
@@ -193,7 +193,7 @@ export const food = [
     prepTime: "5 min",
     difficulty: "easy",
     tags: ["healthy_fats"],
-    image: "https://source.unsplash.com/600x400/?avocado-toast"
+    image: "https://cdn.pixabay.com/photo/2017/04/25/21/23/avocado-2260921_640.jpg"
   },
 
   {
@@ -210,7 +210,7 @@ export const food = [
     prepTime: "15 min",
     difficulty: "easy",
     tags: ["vegan"],
-    image: "https://source.unsplash.com/600x400/?vegetable-stir-fry"
+    image: "https://cdn.pixabay.com/photo/2014/10/19/20/59/vegetables-494821_640.jpg"
   },
 
   {
@@ -227,7 +227,7 @@ export const food = [
     prepTime: "20 min",
     difficulty: "easy",
     tags: ["plant_protein"],
-    image: "https://source.unsplash.com/600x400/?quinoa-salad"
+    image: "https://cdn.pixabay.com/photo/2017/06/14/10/31/quinoa-2400513_640.jpg"
   },
 
   {
@@ -244,7 +244,7 @@ export const food = [
     prepTime: "3 min",
     difficulty: "easy",
     tags: ["detox"],
-    image: "https://source.unsplash.com/600x400/?green-smoothie"
+    image: "https://cdn.pixabay.com/photo/2015/09/09/18/45/smoothie-932120_640.jpg"
   },
 
   {
@@ -261,7 +261,7 @@ export const food = [
     prepTime: "25 min",
     difficulty: "medium",
     tags: ["indian", "vegan"],
-    image: "https://source.unsplash.com/600x400/?chickpea-curry"
+    image: "https://cdn.pixabay.com/photo/2020/05/02/06/23/chickpeas-5118386_640.jpg"
   },
 
   {
@@ -278,7 +278,7 @@ export const food = [
     prepTime: "5 min",
     difficulty: "easy",
     tags: ["healthy"],
-    image: "https://source.unsplash.com/600x400/?fruit-salad"
+    image: "https://cdn.pixabay.com/photo/2016/03/05/19/02/salad-1239247_640.jpg"
   },
 
   {
@@ -295,7 +295,7 @@ export const food = [
     prepTime: "10 min",
     difficulty: "easy",
     tags: ["vegan"],
-    image: "https://source.unsplash.com/600x400/?tofu-scramble"
+    image: "https://cdn.pixabay.com/photo/2020/05/05/07/41/tofu-5132715_640.jpg"
   },
 
   {
@@ -312,7 +312,7 @@ export const food = [
     prepTime: "15 min",
     difficulty: "easy",
     tags: ["omega_3"],
-    image: "https://source.unsplash.com/600x400/?grilled-fish"
+    image: "https://cdn.pixabay.com/photo/2016/01/02/00/32/fish-1114062_640.jpg"
   },
 
   {
@@ -329,7 +329,7 @@ export const food = [
     prepTime: "5 min",
     difficulty: "easy",
     tags: ["bulk"],
-    image: "https://source.unsplash.com/600x400/?banana-peanut-butter-toast"
+    image: "https://cdn.pixabay.com/photo/2018/02/16/16/08/bread-3157597_640.jpg"
   },
 
   {
@@ -346,7 +346,7 @@ export const food = [
     prepTime: "8 min",
     difficulty: "easy",
     tags: ["indian"],
-    image: "https://source.unsplash.com/600x400/?masala-omelette,omelette"
+    image: "https://cdn.pixabay.com/photo/2017/03/21/16/00/omelette-2166019_640.jpg"
   },
 
   {
@@ -363,7 +363,7 @@ export const food = [
     prepTime: "20 min",
     difficulty: "easy",
     tags: ["low_calorie"],
-    image: "https://source.unsplash.com/600x400/?vegetable-soup"
+    image: "https://cdn.pixabay.com/photo/2015/10/23/21/02/soup-1008157_640.jpg"
   },
 
   {
@@ -380,7 +380,7 @@ export const food = [
     prepTime: "5 min",
     difficulty: "easy",
     tags: ["fiber"],
-    image: "https://source.unsplash.com/600x400/?chia-pudding"
+    image: "https://cdn.pixabay.com/photo/2017/03/19/01/00/chia-2159352_640.jpg"
   },
 
   {
@@ -397,7 +397,7 @@ export const food = [
     prepTime: "15 min",
     difficulty: "easy",
     tags: ["indian"],
-    image: "https://source.unsplash.com/600x400/?upma,vegetable-upma"
+    image: "https://cdn.pixabay.com/photo/2023/01/12/09/00/upma-7713413_640.jpg"
   },
 
   {
@@ -414,7 +414,7 @@ export const food = [
     prepTime: "25 min",
     difficulty: "medium",
     tags: ["indian", "high_protein"],
-    image: "https://source.unsplash.com/600x400/?paneer-tikka,grilled-paneer"
+    image: "https://cdn.pixabay.com/photo/2023/06/06/10/52/paneer-tikka-8043682_640.jpg"
   },
 
   {
@@ -431,7 +431,7 @@ export const food = [
     prepTime: "20 min",
     difficulty: "easy",
     tags: ["complex_carbs"],
-    image: "https://source.unsplash.com/600x400/?brown-rice-bowl"
+    image: "https://cdn.pixabay.com/photo/2016/11/21/15/53/rice-1846364_640.jpg"
   },
 
   {
@@ -448,7 +448,7 @@ export const food = [
     prepTime: "5 min",
     difficulty: "easy",
     tags: ["nutrient_dense"],
-    image: "https://source.unsplash.com/600x400/?sauteed-spinach,spinach"
+    image: "https://cdn.pixabay.com/photo/2021/01/13/20/20/spinach-5917715_640.jpg"
   },
 
   {
@@ -465,7 +465,7 @@ export const food = [
     prepTime: "15 min",
     difficulty: "easy",
     tags: ["fiber"],
-    image: "https://source.unsplash.com/600x400/?broccoli-soup"
+    image: "https://cdn.pixabay.com/photo/2017/05/23/22/36/broccoli-2339618_640.jpg"
   },
 
   {
@@ -482,7 +482,7 @@ export const food = [
     prepTime: "8 min",
     difficulty: "easy",
     tags: ["protein"],
-    image: "https://source.unsplash.com/600x400/?cottage-cheese-salad"
+    image: "https://cdn.pixabay.com/photo/2017/05/23/12/48/salad-2338824_640.jpg"
   },
 
   {
@@ -499,7 +499,7 @@ export const food = [
     prepTime: "7 min",
     difficulty: "easy",
     tags: ["healthy_fats"],
-    image: "https://source.unsplash.com/600x400/?peanut-chutney,peanuts"
+    image: "https://cdn.pixabay.com/photo/2014/12/15/13/40/peanuts-569076_640.jpg"
   },
 
   {
@@ -516,7 +516,7 @@ export const food = [
     prepTime: "20 min",
     difficulty: "medium",
     tags: ["indian"],
-    image: "https://source.unsplash.com/600x400/?dhokla,steamed-dhokla"
+    image: "https://cdn.pixabay.com/photo/2020/03/22/07/22/dhokla-4956022_640.jpg"
   },
 
   {
@@ -533,7 +533,7 @@ export const food = [
     prepTime: "30 min",
     difficulty: "easy",
     tags: ["indian", "comfort"],
-    image: "https://source.unsplash.com/600x400/?khichdi,vegetable-khichdi"
+    image: "https://cdn.pixabay.com/photo/2020/11/03/07/15/khichdi-5708658_640.jpg"
   },
 
   {
@@ -550,7 +550,7 @@ export const food = [
     prepTime: "20 min",
     difficulty: "medium",
     tags: ["high_protein"],
-    image: "https://source.unsplash.com/600x400/?egg-fried-rice"
+    image: "https://cdn.pixabay.com/photo/2015/03/26/09/39/fried-rice-690254_640.jpg"
   },
 
   {
@@ -567,7 +567,7 @@ export const food = [
     prepTime: "10 min",
     difficulty: "easy",
     tags: ["indian"],
-    image: "https://source.unsplash.com/600x400/?poha"
+    image: "https://cdn.pixabay.com/photo/2020/08/28/07/38/poha-5522131_640.jpg"
   },
 
   {
@@ -584,7 +584,7 @@ export const food = [
     prepTime: "15 min",
     difficulty: "easy",
     tags: ["detox"],
-    image: "https://source.unsplash.com/600x400/?lemon-coriander-soup"
+    image: "https://cdn.pixabay.com/photo/2017/06/02/18/24/soup-2368029_640.jpg"
   },
 
   {
@@ -601,7 +601,7 @@ export const food = [
     prepTime: "10 min",
     difficulty: "easy",
     tags: ["mediterranean"],
-    image: "https://source.unsplash.com/600x400/?hummus-bowl"
+    image: "https://cdn.pixabay.com/photo/2017/05/23/12/48/hummus-2338825_640.jpg"
   },
 
   {
@@ -618,7 +618,7 @@ export const food = [
     prepTime: "25 min",
     difficulty: "easy",
     tags: ["indian"],
-    image: "https://source.unsplash.com/600x400/?dal-tadka"
+    image: "https://cdn.pixabay.com/photo/2020/05/16/08/58/dal-5179885_640.jpg"
   },
 
   {
@@ -635,7 +635,7 @@ export const food = [
     prepTime: "7 min",
     difficulty: "easy",
     tags: ["light"],
-    image: "https://source.unsplash.com/600x400/?green-beans,steamed-green-beans"
+    image: "https://cdn.pixabay.com/photo/2018/03/17/05/25/green-beans-3231934_640.jpg"
   },
 
   {
@@ -652,7 +652,7 @@ export const food = [
     prepTime: "20 min",
     difficulty: "medium",
     tags: ["indian"],
-    image: "https://source.unsplash.com/600x400/?egg-curry"
+    image: "https://cdn.pixabay.com/photo/2023/09/11/14/29/egg-curry-8246773_640.jpg"
   },
 
   {
@@ -669,7 +669,7 @@ export const food = [
     prepTime: "3 min",
     difficulty: "easy",
     tags: ["shake"],
-    image: "https://source.unsplash.com/600x400/?protein-smoothie"
+    image: "https://cdn.pixabay.com/photo/2017/03/27/14/56/smoothie-2176105_640.jpg"
   },
 
   {
@@ -686,6 +686,6 @@ export const food = [
     prepTime: "7 min",
     difficulty: "easy",
     tags: ["light"],
-    image: "https://source.unsplash.com/600x400/?veg-sandwich"
+    image: "https://cdn.pixabay.com/photo/2017/05/07/08/56/sandwich-2292536_640.jpg"
   }
 ];

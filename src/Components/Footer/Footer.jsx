@@ -37,6 +37,7 @@ export default function Footer() {
             <Link to="/track-calories">Track Calories</Link>
             <Link to="/workout-splits">Workout Splits</Link>
             <Link to="/login">Login</Link>
+            <Link to="/diet">Diet</Link>
   
             <Link to="/about">About</Link>
             <Link to="">Blog</Link>
@@ -67,6 +68,7 @@ export default function Footer() {
             <Link to="/see-goals">See Goals</Link>
             <Link to="/track-calories">Track Calories</Link>
             <Link to="/workout-splits">Workout Splits</Link>
+            <Link to="/diet">Diet</Link>
 
   
             <Link to="/about">About</Link>

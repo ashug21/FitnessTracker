@@ -21,6 +21,8 @@ import CheckGoals from './Pages/CheckGoals/CheckGoals'
 import AboutSupplements from './Pages/AboutSupplements/AboutSupplements'
 import About from './Pages/About/About'
 import Fooditems from './Pages/FoodItems/Fooditems'
+import ExerciseDetails from './Pages/ExerciseDetails/ExerciseDetails'
+import ExercisesData from './Pages/ExercisesData/ExercisesData'
 
 
 const App = () => {
@@ -48,6 +50,8 @@ const App = () => {
         <Route path='/aboutSupplements' element={<AboutSupplements/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/diet' element={<Fooditems/>} />
+        <Route path='/exercise-details' element={<ExerciseDetails/>} />
+        <Route path='/exercise-details/:id' element={<ExercisesData/>} />
       </Routes>
     </div>
   )

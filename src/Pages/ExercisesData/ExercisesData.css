@@ -1,0 +1,166 @@
+/* PAGE WRAPPER */
+.exerciseDetailPage41 {
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+  min-height: 100vh;
+}
+
+/* MAIN CARD */
+.exerciseDetailCard41 {
+  width: 100%;
+  max-width: 820px;
+  background: #ffffff;
+  padding: 34px;
+  border-radius: 22px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.exerciseDetailCard41:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.10);
+}
+
+/* TITLE */
+.exerciseTitle41 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 auto 8px auto;
+  color: rgba(228, 23, 23, 0.7);
+  letter-spacing: -0.7px;
+  position: relative;
+  padding-bottom: 14px;
+  line-height: 1.2;
+  animation: titleFade41 .7s ease forwards;
+  opacity: 0;
+
+}
+
+/* Underline Accent */
+.exerciseTitle41::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 85px;
+  height: 5px;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #0ea5e9, #38bdf8);
+  border-radius: 3px;
+  box-shadow: 0 2px 10px rgba(14,165,233,0.5);
+  animation: underlineGrow41 .7s ease forwards;
+  opacity: 0;
+}
+
+/* Soft Glow Behind Title */
+.exerciseTitleGlow41 {
+  position: relative;
+  text-align: center;
+}
+
+.exerciseTitleGlow41::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110%;
+  height: 60%;
+  background: radial-gradient(circle, rgba(14,165,233,0.12), transparent 70%);
+  transform: translate(-50%, -50%);
+  filter: blur(18px);
+  z-index: -1;
+  opacity: 1;
+  pointer-events: none;
+}
+
+/* Animations */
+@keyframes titleFade41 {
+  0% { opacity: 0; transform: translateY(-12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes underlineGrow41 {
+  0% { width: 0; opacity: 0; }
+  100% { width: 85px; opacity: 1; }
+}
+
+/* VIDEO WRAPPER */
+.exerciseVideoWrapper41 {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.25);
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+
+.exerciseVideoWrapper41:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 34px rgba(0,0,0,0.35);
+}
+
+/* VIDEO */
+.exerciseVideo41 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 16px;
+}
+
+/* INFO TEXT GROUP */
+.exerciseInfo41 {
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: #f1f5f9;
+  font-size: 1.05rem;
+  color: #1e293b;
+  font-weight: 500;
+  border-left: 5px solid #0ea5e9;
+  line-height: 1.4;
+}
+
+/* DESCRIPTION */
+.exerciseInstructions41 {
+  margin-top: 8px;
+  padding: 18px 20px;
+  background: #f8fafc;
+  border-radius: 14px;
+  border-left: 5px solid #10b981;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #3b4252;
+  font-weight: 400;
+}
+
+/* ANIMATION */
+.exerciseDetailCard41,
+.exerciseVideoWrapper41,
+.exerciseInfo41,
+.exerciseInstructions41 {
+  animation: fadeIn41 0.55s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn41 {
+  0% { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* NOT FOUND */
+.notFound41 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #dc2626;
+}

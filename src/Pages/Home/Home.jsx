@@ -7,6 +7,7 @@ import Footer from '../../Components/Footer/Footer'
 import Calories from '../CalculateCalories/Calories'
 import Content from '../../Components/Content/Content'
 import Supplement from '../../Components/Supplements/Supplement'
+import Exercises from '../../Components/Exercises/Exercises'
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Content/>
       <br/>
       <Supplement/>
+      <Exercises/>
       <Footer/>
     </div>
   )

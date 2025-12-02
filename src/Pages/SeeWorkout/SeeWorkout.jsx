@@ -93,7 +93,7 @@ const SeeWorkout = () => {
           <div className="analytics-grid5">
 
             <div className="analytics-card5">
-              <h3>Total Workouts</h3>
+              <h3>Total Exercises</h3>
               <p>{analytics.totalWorkouts}</p>
             </div>
 

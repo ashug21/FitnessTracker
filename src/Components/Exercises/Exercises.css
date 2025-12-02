@@ -1,0 +1,190 @@
+.exerciseProCard33 {
+    width: 95%;
+    max-width: 1080px;
+    margin: 28px auto;
+    border-radius: 16px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    background: linear-gradient(180deg, #ffffff, #fbfcff);
+    box-shadow: 0 16px 40px rgba(16, 20, 30, 0.08);
+    transition: transform 260ms cubic-bezier(.2,.9,.2,1), box-shadow 260ms;
+    isolation: isolate;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .exerciseProCard33:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 60px rgba(16, 20, 30, 0.12);
+  }
+  
+  .exerciseProCard33:focus {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 52px rgba(16,20,30,0.14), 0 0 0 4px rgba(99,102,241,0.12);
+  }
+  
+  .exerciseMediaLink33 {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* FIX: No fixed height, adapts to real image height */
+  .exerciseProImageWrap33 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #e9eefb;
+  }
+  
+  /* FIX: Image ALWAYS fills container */
+  .exerciseProImage33 {
+    width: 100%;
+    height: auto;            /* FIXED */
+    display: block;          /* FIXED */
+    object-fit: cover;       /* ensures fill */
+    object-position: center; /* centers */
+    transition: transform 520ms cubic-bezier(.2,.9,.2,1), filter 420ms;
+  }
+  
+  .exerciseProCard33:hover .exerciseProImage33,
+  .exerciseProCard33:focus .exerciseProImage33 {
+    transform: scale(1.08);
+    filter: saturate(1.03) contrast(1.02);
+  }
+  
+  .exerciseProTag33 {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    backdrop-filter: blur(6px);
+    z-index: 6;
+  }
+  
+  .exerciseProGradient33 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    z-index: 5;
+  }
+  
+  /* Content section */
+  .exerciseProContent33 {
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .exerciseProTitle33 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 800;
+    color: #0b0b0d;
+    letter-spacing: -0.2px;
+  }
+  
+  .exerciseProText33 {
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: #3c3e42;
+    opacity: 0.93;
+  }
+  
+  /* Highlights */
+  .exerciseProHighlights33 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 6px 0;
+  }
+  
+  .exerciseHighlightItem33 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0,0,0,0.04);
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2f3033;
+    transition: background 0.2s ease;
+  }
+  
+  .exerciseHighlightItem33:hover {
+    background: rgba(0,0,0,0.07);
+  }
+  
+  .exerciseHighlightIcon33 {
+    font-size: 16px;
+  }
+  
+  .exerciseHighlightText33 {
+    margin: 0;
+  }
+  
+  .exerciseProSecondary33 {
+    font-size: 14px;
+    color: #4a4b4d;
+    line-height: 1.55;
+    opacity: 0.9;
+    margin-top: 4px;
+  }
+  
+  .exerciseProBtnWrap33 {
+    margin-top: 14px;
+    text-decoration: none;
+    width: fit-content;
+  }
+  
+  .exerciseProBtn33 {
+    padding: 10px 22px;
+    border: none;
+    background: linear-gradient(90deg, #3e8bfd, #6d6fff);
+    color: white;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 10px 22px rgba(80, 103, 255, 0.32);
+    transition: 0.25s ease;
+  }
+  
+  .exerciseProBtn33:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 860px) {
+    .exerciseProCard33 {
+      grid-template-columns: 1fr;
+    }
+  
+    .exerciseProContent33 {
+      padding: 18px;
+    }
+  
+    .exerciseProTitle33 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .exerciseProImage33,
+    .exerciseProCard33,
+    .exerciseProBtn33 {
+      transition: none;
+    }
+  }
+  
