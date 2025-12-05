@@ -44,7 +44,7 @@ const Main = () => {
           <p>Track workouts. Set goals. Transform your life.</p>
           <br /><br />
           {!user ? (
-            <Link to="/signup">
+            <Link to="/login">
               <button className="button-2">Add Your Goal</button>
             </Link>
           ) : (

@@ -23,6 +23,7 @@ import About from './Pages/About/About'
 import Fooditems from './Pages/FoodItems/Fooditems'
 import ExerciseDetails from './Pages/ExerciseDetails/ExerciseDetails'
 import ExercisesData from './Pages/ExercisesData/ExercisesData'
+import AuthenticateUser from './Components/AuthenticateUser'
 
 
 const App = () => {
@@ -31,10 +32,10 @@ const App = () => {
       <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/add-workout' element={<AddWorkout/>} />
-        <Route path='/add-goals' element={<AddGoals/>} />
-        <Route path='/see-workout' element={<SeeWorkout/>} />
-        <Route path='/see-goals' element={<SeeGoals/>} />
+        <Route path='/add-workout' element={<AuthenticateUser> <AddWorkout/></AuthenticateUser>} />
+        <Route path='/add-goals' element={<AuthenticateUser> <AddGoals/> </AuthenticateUser>} />
+        <Route path='/see-workout' element={<AuthenticateUser>  <SeeWorkout/> </AuthenticateUser>} />
+        <Route path='/see-goals' element={<AuthenticateUser><SeeGoals/></AuthenticateUser>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/signup' element={<Signup/>} />
         <Route path='/track-calories' element={<Track/>} />

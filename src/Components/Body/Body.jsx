@@ -118,7 +118,7 @@ else{
       {/* FEATURE SECTION */}
       <section className="features1">
         <div className="feature-card1">
-          <Link to="/signup" className="link-clean">
+          <Link to="/login" className="link-clean">
          
           <img
             src="https://images.unsplash.com/photo-1599058917212-d750089bc07e"
@@ -130,7 +130,7 @@ else{
         </div>
 
         <div className="feature-card1">
-          <Link to="/signup" className="link-clean">
+          <Link to="/login" className="link-clean">
           <img
             src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74"
             alt="Goals"

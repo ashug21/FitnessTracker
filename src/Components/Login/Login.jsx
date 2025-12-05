@@ -5,6 +5,7 @@ import {app , analytics} from '../../../Firebase'
 import {getAuth , signInWithEmailAndPassword , onAuthStateChanged , GoogleAuthProvider ,signInWithPopup} from 'firebase/auth';
 import {Link , useNavigate} from 'react-router-dom'
 import Google_icon from "../../assets/google.png";
+import Guest from '../../assets/Guest.png'
 
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
@@ -28,6 +29,23 @@ const handleLogin = async(e) => {
   }
 }
 
+
+const handleGuestUser = async(e) => {
+
+  e.preventDefault();
+
+  const guestEmail = "admin@gmail.com";
+  const guestPassword = "admins"
+
+  try {
+    await signInWithEmailAndPassword(auth , guestEmail , guestPassword);
+    navigate('/');
+    
+  } catch (error) {
+    alert(error);
+  }
+ 
+}
 
 useEffect(() => {
   onAuthStateChanged(auth ,user => {
@@ -87,7 +105,10 @@ navigate('/');
           <img src={Google_icon} alt="Google" className="google-logo" />
           Continue with Google
           </button>
-
+          <button onClick={handleGuestUser} type="button" className="guest-btn">
+  <img src={Guest} alt="Guest" className="guest-logo" />
+  Continue as Guest User
+</button>
           </form>
 
           <p className="login-signup">
