@@ -73,7 +73,7 @@ export default function Track14() {
       return;
     }
 
-    // HEIGHT conversion
+   
     let heightInCm = 0;
 
     if (heightMode === "cm") {
@@ -90,7 +90,7 @@ export default function Track14() {
       }
     }
 
-    // WEIGHT
+
     let weightInKg = Number(weightValue);
     if (weightUnit === "lbs") weightInKg *= 0.453592;
 
@@ -223,23 +223,35 @@ export default function Track14() {
           </form>
 
           {result && (
-            <div className="result-container14">
-              <div className="result-card14">
-                <h2 className="result-calories14">{Math.round(result)} kcal/day</h2>
-                <p className="result-description14">Maintenance calories.</p>
-              </div>
+  <div className="result-container14">
 
-              <div className="result-card14">
-                <h2 className="result-calories14">{Math.round(result) + 200} kcal/day</h2>
-                <p className="result-description14">Bulking calories.</p>
-              </div>
+    <div className="result-card14">
+      <h2 className="result-calories14">{Math.round(result)} kcal/day</h2>
+      <p className="result-description14"><strong>Maintenance calories.</strong></p>
+      <p className="result-extra14">
+        This is the estimated number of calories you need to maintain your current weight.
+      </p>
+    </div>
 
-              <div className="result-card14">
-                <h2 className="result-calories14">{Math.round(result) - 200} kcal/day</h2>
-                <p className="result-description14">Cutting calories.</p>
-              </div>
-            </div>
-          )}
+    <div className="result-card14">
+      <h2 className="result-calories14">{Math.round(result) + 200} kcal/day</h2>
+      <p className="result-description14"><strong> Bulking calories.</strong></p>
+      <p className="result-extra14">
+        Slight calorie surplus recommended for clean muscle gain without excess fat.
+      </p>
+    </div>
+
+    <div className="result-card14">
+      <h2 className="result-calories14">{Math.round(result) - 200} kcal/day</h2>
+      <p className="result-description14"><strong>Cutting calories.</strong> </p>
+      <p className="result-extra14">
+        A safe deficit to promote fat loss while preserving muscle mass.
+      </p>
+    </div>
+
+  </div>
+)}
+
         </div>
       </div>
 

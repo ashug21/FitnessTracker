@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{lazy,Suspense} from 'react'
 import {Route , Routes} from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import AddWorkout from './Pages/AddWorkout/AddWorkout'
@@ -8,7 +8,7 @@ import SeeGoals from './Pages/SeeGoals/SeeGoals'
 import Login from './Components/Login/Login'
 import Signup from './Components/Signup/Signup'
 import Track from './Components/TrackCalories/Track'
-import Splits from './Pages/WorkoutSplits/Splits'
+const Splits = lazy(() => import("./Pages/WorkoutSplits/Splits"));
 import ScrollToTop from "./Components/ScrollToTop";
 import PushPullLeg from './Components/workoutSplitsInfo/PushPullLeg'
 import BroSplit from './Components/workoutSplitsInfo/BroSplit'
@@ -18,18 +18,20 @@ import Phul from './Components/workoutSplitsInfo/Phul'
 import Phat from './Components/workoutSplitsInfo/Phat'
 import Arnold from './Components/workoutSplitsInfo/Arnold'
 import CheckGoals from './Pages/CheckGoals/CheckGoals'
-import AboutSupplements from './Pages/AboutSupplements/AboutSupplements'
+const AboutSupplements = lazy(() => import("./Pages/AboutSupplements/AboutSupplements"));
 import About from './Pages/About/About'
 import Fooditems from './Pages/FoodItems/Fooditems'
-import ExerciseDetails from './Pages/ExerciseDetails/ExerciseDetails'
-import ExercisesData from './Pages/ExercisesData/ExercisesData'
+const ExerciseDetails = lazy(() => import("./Pages/ExerciseDetails/ExerciseDetails"));
+const ExercisesData = lazy(() => import("./Pages/ExercisesData/ExercisesData"));
 import AuthenticateUser from './Components/AuthenticateUser'
+import Loading from './Components/Loading/Loading'
 
 
 const App = () => {
   return (
     <div>
       <ScrollToTop/>
+      <Suspense fallback={<Loading/>}>     
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/add-workout' element={<AuthenticateUser> <AddWorkout/></AuthenticateUser>} />
@@ -54,6 +56,7 @@ const App = () => {
         <Route path='/exercise-details' element={<ExerciseDetails/>} />
         <Route path='/exercise-details/:id' element={<ExercisesData/>} />
       </Routes>
+      </Suspense>
     </div>
   )
 }

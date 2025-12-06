@@ -12,11 +12,9 @@
   border: 1px solid rgba(0, 0, 0, 0.04);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   height: 90px;
-
-  /* 🔥 REQUIRED FIXES */
-  position: relative !important; 
-  z-index: 999999 !important;      /* keeps navbar above all content */
-  pointer-events: auto !important; /* ensures clicks always work */
+  position: relative !important;
+  z-index: 999999 !important;
+  pointer-events: auto !important;
 }
 
 /* LOGO */
@@ -24,13 +22,10 @@
   font-size: 32px;
   font-weight: 800;
   letter-spacing: -0.6px;
-
   cursor: pointer;
-
   background: linear-gradient(90deg, #1e3a8a, #2563eb, #7c3aed);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   text-shadow: 0px 0px 8px rgba(37, 99, 235, 0.15);
 }
 
@@ -63,7 +58,6 @@
   cursor: pointer;
 }
 
-/* Underline hover effect */
 .ft-links1 li a::after {
   content: "";
   position: absolute;
@@ -107,4 +101,74 @@
   .ft-logo1 {
     font-size: 26px;
   }
+}
+
+/* AVATAR WRAPPER */
+.default-class-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* AVATAR IMAGE */
+.default-img1 {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #2563eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.default-img1:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+.ft-nav1 {
+  width: 100%;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.ft-logo1 a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #235656;
+  text-decoration: none;
+}
+
+.ft-links1 {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+}
+
+.ft-links1 a {
+  text-decoration: none;
+  color: #235656;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ft-avatar-container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ft-avatar-img1 {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e5e5e5;
 }
