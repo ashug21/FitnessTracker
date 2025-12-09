@@ -143,6 +143,36 @@ const getUserWorkout = async (req, res) => {
   }
 };
 
+const updateUserWorkout = async(req,res) => {
+    try {
+      const { id } = req.params;
+      const updates = req.body;
+
+      const updatedWorkout = await AddWorkout.findByIdAndUpdate(
+        id , 
+        updates,
+        {new : true}
+      )
+
+      if (!updatedWorkout) {
+        return res.status(404).json({
+          success: false,
+          message: "Workout not found"
+        });
+      }
+
+        return res.status(200).json({
+      success: true,
+      message: "Workout updated successfully",
+      data: updatedWorkout
+    });
+
+      
+    } catch (error) {
+      return res.status(500).json({success: false,message: error.message,});
+    }
+}
+
 const deleteUserWorkout = async (req, res) => {
   try {
     const { id } = req.params;
@@ -262,5 +292,6 @@ module.exports = {
     getUserWorkout,
     deleteUserWorkout,
     getAnalytics,
-    getMuscleDistribution
+    getMuscleDistribution,
+    updateUserWorkout
 };

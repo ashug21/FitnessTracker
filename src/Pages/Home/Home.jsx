@@ -21,7 +21,9 @@ const Home = () => {
       <Content/>
       <br/>
       <Supplement/>
+      <br/><br/>
       <Exercises/>
+      <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/> <br/><br/>
       <Footer/>
     </div>
   )

@@ -37,11 +37,15 @@ const getUserGoal = async (req, res) => {
   }
 };
 
+
+
 const deleteUserGoal = async (req, res) => {
   try {
     const { id } = req.params;
 
     const goal = await AddGoals.findByIdAndDelete(id);
+
+
 
     if (!goal) {
 
