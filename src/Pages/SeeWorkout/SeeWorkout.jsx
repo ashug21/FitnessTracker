@@ -79,13 +79,16 @@ const SeeWorkout = () => {
       if (editedFields.sets !== undefined) payload.sets = editedFields.sets;
       if (editedFields.reps !== undefined) payload.reps = editedFields.reps;
       if (editedFields.weight !== undefined) payload.weight = editedFields.weight;
-      await axios.patch(`http://localhost:8080/aw/update/${id}`, payload);
+      await axios.patch(`http://fitnesstracker-1-ud7g.onrender.com/aw/update/${id}`, payload);
       cancelEdit();
       getWorkoutdata();
     } catch (error) {
       console.error("Update error:", error);
     }
   };
+
+
+
 
   return (
     <div>
