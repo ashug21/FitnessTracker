@@ -22,6 +22,8 @@ const AddGoalsSchema = new mongoose.Schema({
         type : String,
         required : true
     },
+
+    
 });
 
 const AddGoals = mongoose.model('addgoals' , AddGoalsSchema);

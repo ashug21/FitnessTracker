@@ -1,4 +1,4 @@
-import React,{lazy,Suspense} from 'react'
+import React,{lazy,Suspense, useEffect} from 'react'
 import {Route , Routes} from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import AddWorkout from './Pages/AddWorkout/AddWorkout'
@@ -28,6 +28,13 @@ import Loading from './Components/Loading/Loading'
 
 
 const App = () => {
+
+  useEffect(() => {
+    fetch("https://fitnesstracker-1-ud7g.onrender.com/aw/health")
+      .catch(() => {});
+  }, []);
+
+  
   return (
     <div>
       <ScrollToTop/>
