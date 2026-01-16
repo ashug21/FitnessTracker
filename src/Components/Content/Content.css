@@ -125,21 +125,216 @@
     opacity: 0.9;
   }
   
-  @media (max-width: 780px) {
+  @media (max-width: 1280px) {
+    .workout-card15 {
+      max-width: 960px;
+      padding: 32px;
+      gap: 28px;
+    }
+  
+    .card-content15 h3 {
+      font-size: 1.85rem;
+    }
+  
+    .cta15 {
+      margin-left: 80px;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .workout-card15 {
+      max-width: 900px;
+      grid-template-columns: 210px 1fr;
+    }
+  
+    .card-media15 {
+      width: 210px;
+      height: 210px;
+    }
+  
+    .cta15 {
+      margin-left: 60px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .workout-card15 {
+      padding: 28px;
+      gap: 24px;
+    }
+  
+    .card-content15 h3 {
+      font-size: 1.7rem;
+    }
+  
+    .lead15 {
+      font-size: 1rem;
+    }
+  
+    .highlights15 li {
+      font-size: 0.95rem;
+    }
+  
+    .cta15 {
+      font-size: 1rem;
+      padding: 13px 18px;
+      margin-left: 40px;
+    }
+  }
+  
+  @media (max-width: 900px) {
     .workout-card15 {
       grid-template-columns: 1fr;
-      padding: 24px;
-      gap: 20px;
+      text-align: center;
     }
   
     .card-media15 {
       margin: 0 auto;
-      width: 200px;
-      height: 200px;
+    }
+  
+    .card-content15 {
+      padding-right: 0;
+    }
+  
+    .meta15 {
+      justify-content: center;
+    }
+  
+    .cta15 {
+      margin-left: 0;
+    }
+  
+    .card-accent15 {
+      width: 260px;
+      height: 260px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .workout-card15 {
+      padding: 24px;
+      border-radius: 20px;
+    }
+  
+    .card-media15 {
+      width: 190px;
+      height: 190px;
     }
   
     .card-content15 h3 {
-      font-size: 1.45rem;
+      font-size: 1.55rem;
+    }
+  
+    .lead15 {
+      font-size: 0.95rem;
+    }
+  
+    .highlights15 li {
+      font-size: 0.9rem;
+      padding: 11px 12px;
+    }
+  
+    .cta15 {
+      font-size: 0.95rem;
+      padding: 12px 18px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .workout-card15 {
+      padding: 22px;
+      margin: 22px auto;
+    }
+  
+    .card-media15 {
+      width: 170px;
+      height: 170px;
+    }
+  
+    .meta15 {
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .cal15,
+    .duration15 {
+      font-size: 0.9rem;
+      padding: 9px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .workout-card15 {
+      padding: 20px;
+      border-radius: 18px;
+    }
+  
+    .card-media15 {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .card-content15 h3 {
+      font-size: 1.4rem;
+    }
+  
+    .lead15 {
+      font-size: 0.9rem;
+    }
+  
+    .highlights15 {
+      gap: 10px;
+    }
+  
+    .highlights15 li {
+      font-size: 0.85rem;
+      padding: 10px 12px;
+    }
+  
+    .cta15 {
+      font-size: 0.9rem;
+      padding: 11px 16px;
+    }
+  
+    .card-accent15 {
+      width: 220px;
+      height: 220px;
+    }
+  }
+  
+  @media (max-width: 390px) {
+    .card-media15 {
+      width: 135px;
+      height: 135px;
+    }
+  
+    .card-content15 h3 {
+      font-size: 1.3rem;
+    }
+  
+    .lead15 {
+      font-size: 0.85rem;
+    }
+  
+    .cta15 {
+      font-size: 0.85rem;
+      padding: 10px 14px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .workout-card15 {
+      padding: 18px;
+    }
+  
+    .card-media15 {
+      width: 125px;
+      height: 125px;
+    }
+  
+    .highlights15 li {
+      font-size: 0.8rem;
     }
   }
   

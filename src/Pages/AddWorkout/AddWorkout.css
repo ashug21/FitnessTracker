@@ -105,13 +105,149 @@ body {
 
 
 
-/* Responsive */
-@media (max-width: 650px) {
-  .form-group-row5 {
-    flex-direction: column;
+@media (max-width: 1280px) {
+  .addworkout-container5 {
+    padding: 38px 40px;
   }
 
+  .addworkout-title5 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
   .addworkout-container5 {
-    padding: 30px;
+    max-width: 600px;
+    padding: 36px 38px;
+  }
+
+  .addworkout-title5 {
+    font-size: 28px;
+  }
+
+  .submit-btn5 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 900px) {
+  .addworkout-container5 {
+    margin: 60px auto;
+    padding: 34px 34px;
+  }
+
+  .addworkout-form5 {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .addworkout-container5 {
+    width: 92%;
+    padding: 32px 30px;
+    border-radius: 18px;
+  }
+
+  .addworkout-title5 {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+
+  .form-group5 label {
+    font-size: 14.5px;
+  }
+
+  .form-group5 input {
+    font-size: 15.5px;
+    padding: 13px 15px;
+  }
+
+  .submit-btn5 {
+    padding: 15px 0;
+    font-size: 16.5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .addworkout-container5 {
+    margin: 50px auto;
+    padding: 28px 26px;
+  }
+
+  .addworkout-title5 {
+    font-size: 24px;
+  }
+
+  .form-group-row5 {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .addworkout-container5 {
+    width: 94%;
+    padding: 26px 22px;
+    border-radius: 16px;
+  }
+
+  .addworkout-title5 {
+    font-size: 22px;
+    margin-bottom: 22px;
+  }
+
+  .addworkout-form5 {
+    gap: 18px;
+  }
+
+  .form-group5 label {
+    font-size: 14px;
+  }
+
+  .form-group5 input {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+
+  .submit-btn5 {
+    font-size: 16px;
+    padding: 14px 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .addworkout-container5 {
+    padding: 24px 20px;
+  }
+
+  .addworkout-title5 {
+    font-size: 21px;
+  }
+
+  .form-group-row5 {
+    gap: 12px;
+  }
+
+  .submit-btn5 {
+    font-size: 15.5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .addworkout-container5 {
+    padding: 22px 18px;
+  }
+
+  .addworkout-title5 {
+    font-size: 20px;
+  }
+
+  .form-group5 input {
+    font-size: 14.5px;
+    padding: 11px 13px;
+  }
+
+  .submit-btn5 {
+    font-size: 15px;
+    padding: 13px 0;
   }
 }

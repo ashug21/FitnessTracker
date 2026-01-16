@@ -72,19 +72,6 @@
   line-height: 1.7;
 }
 
-@media (max-width: 600px) {
-  .ft-footer {
-    padding: 2.5rem 1.2rem;
-  }
-
-  .ft-footer-logo {
-    font-size: 1.6rem;
-  }
-
-  .ft-footer-links {
-    gap: 1rem 1.4rem;
-  }
-}
 .ft-footer {
   width: 100%;
   padding: 3.5rem 2rem;
@@ -121,3 +108,135 @@
   color: #aaa;
 }
 
+
+@media (max-width: 1280px) {
+  .ft-footer {
+    padding: 3.2rem 2rem;
+    gap: 2.2rem;
+  }
+
+  .ft-footer-logo {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ft-footer {
+    padding: 3rem 1.8rem;
+  }
+
+  .ft-footer-content {
+    gap: 1.4rem;
+  }
+
+  .ft-footer-links {
+    gap: 1.2rem 1.8rem;
+  }
+
+  .ft-footer-links a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .ft-footer {
+    padding: 2.8rem 1.6rem;
+    gap: 2rem;
+  }
+
+  .ft-footer-logo {
+    font-size: 1.8rem;
+  }
+
+  .ft-footer-links {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ft-footer {
+    padding: 2.6rem 1.4rem;
+    gap: 1.8rem;
+  }
+
+  .ft-footer-links {
+    gap: 1rem 1.6rem;
+  }
+
+  .ft-footer-links a {
+    font-size: 0.92rem;
+  }
+
+  .ft-footer-copy {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .ft-footer {
+    padding: 2.4rem 1.2rem;
+  }
+
+  .ft-footer-logo {
+    font-size: 1.65rem;
+  }
+
+  .ft-footer-links {
+    gap: 0.9rem 1.4rem;
+  }
+
+  .ft-footer-copy {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ft-footer {
+    padding: 2.2rem 1.1rem;
+    gap: 1.6rem;
+  }
+
+  .ft-footer-logo {
+    font-size: 1.55rem;
+  }
+
+  .ft-footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .ft-footer-copy {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .ft-footer {
+    padding: 2rem 1rem;
+  }
+
+  .ft-footer-logo {
+    font-size: 1.45rem;
+  }
+
+  .ft-footer-links {
+    gap: 0.8rem 1.2rem;
+  }
+
+  .ft-footer-links a {
+    font-size: 0.88rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .ft-footer {
+    padding: 1.9rem 0.9rem;
+  }
+
+  .ft-footer-logo {
+    font-size: 1.4rem;
+  }
+
+  .ft-footer-copy {
+    font-size: 0.83rem;
+  }
+}

@@ -17,7 +17,7 @@ export default function Navbar() {
   };
 
 
-  // This is used when user has choosed guest login
+
   useEffect(() => {
     onAuthStateChanged(auth , user => {
       if(user){

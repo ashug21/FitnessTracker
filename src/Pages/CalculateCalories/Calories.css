@@ -84,21 +84,201 @@
   }
   
   
-  @media (max-width: 940px) {
+ 
+  
+
+  @media (max-width: 1280px) {
+    .calories-wrapper13 {
+      padding: 60px 20px;
+    }
+  
     .calories-card13 {
-      flex-direction: column;
+      max-width: 1000px;
     }
   
-    .calories-img-container13 {
-      width: 100%;
-      padding: 40px 20px;
+    .calories-title13 {
+      font-size: 30px;
     }
   
-    .calories-content13 {
-      width: 100%;
-      padding: 32px 25px;
+    .calories-btn13 {
+      font-size: 21px;
     }
   }
   
-
+  @media (max-width: 1024px) {
+    .calories-card13 {
+      max-width: 900px;
+    }
+  
+    .calories-img-container13 {
+      padding: 24px;
+    }
+  
+    .calories-content13 {
+      padding: 40px 32px;
+    }
+  
+    .calories-title13 {
+      font-size: 28px;
+    }
+  
+    .calories-text13 {
+      font-size: 16.5px;
+    }
+  
+    .calories-btn13 {
+      font-size: 20px;
+      padding: 13px 34px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .calories-card13 {
+      flex-direction: column;
+      max-width: 720px;
+    }
+  
+    .calories-img-container13,
+    .calories-content13 {
+      width: 100%;
+    }
+  
+    .calories-img13 {
+      height: 320px;
+    }
+  
+    .calories-content13 {
+      padding: 36px 30px;
+      text-align: center;
+    }
+  
+    .calories-btn13 {
+      align-self: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .calories-wrapper13 {
+      padding: 50px 18px;
+    }
+  
+    .calories-card13 {
+      border-radius: 24px;
+    }
+  
+    .calories-img13 {
+      height: 300px;
+      border-radius: 18px;
+    }
+  
+    .calories-title13 {
+      font-size: 26px;
+    }
+  
+    .calories-text13 {
+      font-size: 16px;
+    }
+  
+    .calories-btn13 {
+      font-size: 19px;
+      padding: 12px 32px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .calories-wrapper13 {
+      padding: 44px 16px;
+    }
+  
+    .calories-img13 {
+      height: 260px;
+    }
+  
+    .calories-content13 {
+      padding: 32px 24px;
+    }
+  
+    .calories-title13 {
+      font-size: 24px;
+    }
+  
+    .calories-text13 {
+      font-size: 15.5px;
+      line-height: 1.7;
+    }
+  
+    .calories-btn13 {
+      font-size: 18px;
+      padding: 11px 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .calories-wrapper13 {
+      padding: 38px 14px;
+    }
+  
+    .calories-card13 {
+      border-radius: 20px;
+    }
+  
+    .calories-img13 {
+      height: 220px;
+      border-radius: 16px;
+    }
+  
+    .calories-content13 {
+      padding: 28px 20px;
+    }
+  
+    .calories-title13 {
+      font-size: 22px;
+    }
+  
+    .calories-text13 {
+      font-size: 14.5px;
+    }
+  
+    .calories-btn13 {
+      font-size: 17px;
+      padding: 10px 26px;
+    }
+  }
+  
+  @media (max-width: 390px) {
+    .calories-img13 {
+      height: 200px;
+    }
+  
+    .calories-title13 {
+      font-size: 21px;
+    }
+  
+    .calories-text13 {
+      font-size: 14px;
+    }
+  
+    .calories-btn13 {
+      font-size: 16px;
+      padding: 9px 24px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .calories-wrapper13 {
+      padding: 34px 12px;
+    }
+  
+    .calories-img13 {
+      height: 185px;
+    }
+  
+    .calories-title13 {
+      font-size: 20px;
+    }
+  
+    .calories-text13 {
+      font-size: 13.5px;
+    }
+  }
   

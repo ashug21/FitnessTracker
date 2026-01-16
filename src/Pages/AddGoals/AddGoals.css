@@ -129,30 +129,172 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 650px) {
-  .addgoals-container6 {
-    padding: 30px;
-  }
-
-  .addgoals-hero {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .addgoals-illustration {
-    align-self: flex-end;
-    transform: translateY(0);
-  }
-
-  .quote-text {
-    white-space: normal;
-    font-size: 15px;
-  }
-}
 .goal-image {
   width: 120px;
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.2));
+}
+
+
+
+@media (max-width: 1280px) {
+  .addgoals-container6 {
+    padding: 38px 40px;
+  }
+
+  .addgoals-title6 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .addgoals-container6 {
+    max-width: 600px;
+    padding: 36px 36px;
+  }
+
+  .addgoals-title6 {
+    font-size: 28px;
+  }
+
+  .submit-btn6 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 900px) {
+  .addgoals-container6 {
+    margin: 60px auto;
+  }
+
+  .addgoals-form6 {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .addgoals-container6 {
+    width: 92%;
+    padding: 32px 30px;
+    border-radius: 18px;
+  }
+
+  .addgoals-title6 {
+    font-size: 26px;
+    margin-bottom: 22px;
+  }
+
+  .form-group6 label {
+    font-size: 14.5px;
+  }
+
+  .form-group6 input {
+    font-size: 15.5px;
+    padding: 13px 15px;
+  }
+
+  .submit-btn6 {
+    padding: 15px 0;
+    font-size: 16.5px;
+  }
+
+  .goal-image {
+    width: 110px;
+  }
+}
+
+@media (max-width: 640px) {
+  .addgoals-container6 {
+    margin: 50px auto;
+    padding: 28px 26px;
+  }
+
+  .addgoals-title6 {
+    font-size: 24px;
+  }
+
+  .quote-author {
+    font-size: 12.5px;
+  }
+
+  .goal-image {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .addgoals-container6 {
+    width: 94%;
+    padding: 26px 22px;
+    border-radius: 16px;
+  }
+
+  .addgoals-title6 {
+    font-size: 22px;
+  }
+
+  .addgoals-form6 {
+    gap: 18px;
+  }
+
+  .form-group6 label {
+    font-size: 14px;
+  }
+
+  .form-group6 input {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+
+  .submit-btn6 {
+    font-size: 16px;
+    padding: 14px 0;
+  }
+
+  .goal-image {
+    width: 90px;
+  }
+}
+
+@media (max-width: 390px) {
+  .addgoals-container6 {
+    padding: 24px 20px;
+  }
+
+  .addgoals-title6 {
+    font-size: 21px;
+  }
+
+  .quote-text {
+    font-size: 14.5px;
+  }
+
+  .goal-image {
+    width: 85px;
+  }
+}
+
+@media (max-width: 360px) {
+  .addgoals-container6 {
+    padding: 22px 18px;
+  }
+
+  .addgoals-title6 {
+    font-size: 20px;
+  }
+
+  .form-group6 input {
+    font-size: 14.5px;
+    padding: 11px 13px;
+  }
+
+  .submit-btn6 {
+    font-size: 15px;
+    padding: 13px 0;
+  }
+
+  .goal-image {
+    width: 80px;
+  }
 }

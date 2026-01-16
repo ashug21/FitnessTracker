@@ -96,3 +96,165 @@
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(37, 99, 235, 0.45);
 }
+
+
+@media (max-width: 1280px) {
+  .cover-container2 {
+    height: 78vh;
+    border-radius: 20px;
+  }
+
+  .cover-text2 h1 {
+    font-size: 56px;
+  }
+
+  .cover-text2 p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cover-container2 {
+    width: 94%;
+    height: 72vh;
+    margin: 32px auto;
+    border-radius: 18px;
+  }
+
+  .cover-text2 h1 {
+    font-size: 50px;
+  }
+
+  .cover-text2 p {
+    font-size: 19px;
+  }
+
+  .button-2 {
+    font-size: 18px;
+    padding: 12px 28px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cover-container2 {
+    height: 68vh;
+  }
+
+  .cover-text2 h1 {
+    font-size: 46px;
+  }
+
+  .cover-text2 p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cover-container2 {
+    width: 96%;
+    height: 62vh;
+    margin: 28px auto;
+    border-radius: 16px;
+  }
+
+  .cover-text2 {
+    width: 90%;
+  }
+
+  .cover-text2 h1 {
+    font-size: 40px;
+  }
+
+  .cover-text2 p {
+    font-size: 17px;
+    margin-top: 12px;
+  }
+
+  .button-2 {
+    font-size: 17px;
+    padding: 12px 26px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cover-container2 {
+    height: 58vh;
+  }
+
+  .cover-text2 h1 {
+    font-size: 34px;
+  }
+
+  .cover-text2 p {
+    font-size: 16px;
+  }
+
+  .button-2 {
+    font-size: 16px;
+    padding: 11px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cover-container2 {
+    width: 96%;
+    height: 54vh;
+    margin: 24px auto;
+    border-radius: 14px;
+  }
+
+  .cover-text2 {
+    width: 92%;
+  }
+
+  .cover-text2 h1 {
+    font-size: 28px;
+  }
+
+  .cover-text2 p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .button-2 {
+    font-size: 15px;
+    padding: 10px 22px;
+    box-shadow: 0 5px 14px rgba(37, 99, 235, 0.35);
+  }
+}
+
+@media (max-width: 390px) {
+  .cover-container2 {
+    height: 50vh;
+    margin: 20px auto;
+  }
+
+  .cover-text2 h1 {
+    font-size: 25px;
+  }
+
+  .cover-text2 p {
+    font-size: 14px;
+  }
+
+  .button-2 {
+    font-size: 14px;
+    padding: 9px 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .cover-container2 {
+    height: 48vh;
+    border-radius: 12px;
+  }
+
+  .cover-text2 h1 {
+    font-size: 23px;
+  }
+
+  .cover-text2 p {
+    font-size: 13.5px;
+  }
+}
